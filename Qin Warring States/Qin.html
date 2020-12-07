@@ -49,7 +49,7 @@
                         --Fire:|**@{Fire}**
                         --Yin:|**[^Yin.base]**
                         --Yang:|**[^Yang.base]**
-                        --?? $Bonus.base > 0 ?? Bonus:|**[^Bonus.base]**
+                        --?? $Bonus.base <> 0 ?? Bonus:|**[^Bonus.base]**
                         --Result |[[ [NH] @{Fire} + [$Bonus] {?{Bonus Chi|0}} + abs([$Yin]{1d10-1} - [$Yang]{1d10-1}) ]]
                         --?? $Yin.base == $Yang.base AND $Yin.base &gt; 0 ?? !Critical Success|**Critical Success! Regain [^Yin.base] Chi**
                         --?? $Yin.base == $Yang.base AND $Yin.base <= 0 ?? !Critical Failure|**Critical Failure! Lose FIVE Chi**
@@ -74,7 +74,7 @@
                         --Metal:|**@{Metal}**
                         --Yin:|**[^Yin.base]**
                         --Yang:|**[^Yang.base]**
-                        --?? $Bonus.base > 0 ?? Bonus:|**[^Bonus.base]**
+                        --?? $Bonus.base <> 0 ?? Bonus:|**[^Bonus.base]**
                         --Result |[[ [NH] @{Metal} + [$Bonus] {?{Bonus Chi|0}} + abs( [$Yin] {1d10-1} - [$Yang] {1d10-1} ) ]]
                         --?? $Yin.base == $Yang.base AND $Yin.base &gt; 0 ?? !Critical Success|**Critical Success! Regain [^Yin.base] Chi**
                         --?? $Yin.base == $Yang.base AND $Yin.base <= 0 ?? !Critical Failure|**Critical Failure! Lose FIVE Chi**
@@ -101,7 +101,7 @@
                         --Earth:|**@{Earth}**
                         --Yin:|**[^Yin.base]**
                         --Yang:|**[^Yang.base]**
-                        --?? $Bonus.base > 0 ?? Bonus:|**[^Bonus.base]**
+                        --?? $Bonus.base <> 0 ?? Bonus:|**[^Bonus.base]**
                         --Result |[[ [NH] @{Earth} + [$Bonus] {?{Bonus Chi|0}} + abs( [$Yin] {1d10-1} - [$Yang] {1d10-1} ) ]]
                         --?? $Yin.base == $Yang.base AND $Yin.base &gt; 0 ?? !Critical Success|**Critical Success! Regain [^Yin.base] Chi**
                         --?? $Yin.base == $Yang.base AND $Yin.base <= 0 ?? !Critical Failure|**Critical Failure! Lose FIVE Chi**
@@ -128,7 +128,7 @@
                         --Wood:|**@{Wood}**
                         --Yin:|**[^Yin.base]**
                         --Yang:|**[^Yang.base]**
-                        --?? $Bonus.base > 0 ?? Bonus:|**[^Bonus.base]**
+                        --?? $Bonus.base <> 0 ?? Bonus:|**[^Bonus.base]**
                         --Result |[[ [NH] @{Wood} + [$Bonus] {?{Bonus Chi|0}} + abs( [$Yin] {1d10-1} - [$Yang] {1d10-1} ) ]]
                         --?? $Yin.base == $Yang.base AND $Yin.base &gt; 0 ?? !Critical Success|**Critical Success! Regain [^Yin.base] Chi**
                         --?? $Yin.base == $Yang.base AND $Yin.base <= 0 ?? !Critical Failure|**Critical Failure! Lose FIVE Chi**
@@ -153,7 +153,7 @@
                         --Water:|**@{Water}**
                         --Yin:|**[^Yin.base]**
                         --Yang:|**[^Yang.base]**
-                        --?? $Bonus.base > 0 ?? Bonus:|**[^Bonus.base]**
+                        --?? $Bonus.base <> 0 ?? Bonus:|**[^Bonus.base]**
                         --Result |[[ [NH] @{Water} + [$Bonus] {?{Bonus Chi|0}} + abs( [$Yin] {1d10-1} - [$Yang] {1d10-1} ) ]]
                         --?? $Yin.base == $Yang.base AND $Yin.base &gt; 0 ?? !Critical Success|**Critical Success! Regain [^Yin.base] Chi**
                         --?? $Yin.base == $Yang.base AND $Yin.base <= 0 ?? !Critical Failure|**Critical Failure! Lose FIVE Chi**
@@ -279,12 +279,41 @@
         <span data-i18n="Resistance">Resistance</span>
         <input name="attr_Resistance" style="width: 50px;" value="@{Metal}+@{Earth}" disabled="true" type="number" />
     </p>
+    <p>
+        <button name="roll_Initiative" type="roll" value="!power {{
+            --name|Initiative Roll
+            --Water:|**@{Water}**
+            --Yin:|**[^Yin.base]**
+            --Yang:|**[^Yang.base]**
+            --?? $Bonus.base <> 0 ?? Bonus:|**[^Bonus.base]**
+            --Result |[[ [NH] @{Water} + [$Bonus] {?{Bonus Chi|0}} + abs( [$Yin] {1d10-1} - [$Yang] {1d10-1} ) ]]
+            --?? $Yin.base == $Yang.base AND $Yin.base &gt; 0 ?? !Critical Success|**Critical Success! Regain [^Yin.base] Chi**
+            --?? $Yin.base == $Yang.base AND $Yin.base <= 0 ?? !Critical Failure|**Critical Failure! Lose FIVE Chi**
+            --?? $Yin.base > $Yang.base ?? !Yin dominant|** Your Yin is dominant**
+            --?? $Yang.base > $Yin.base ?? !Yang dominant|** Your Yang is dominant** }}" >
+            <span data-i18n="Initiative-button">Initiative</span>
+        </button>
+        <button name="roll_Resistance" type="roll" value="!power {{
+            --name|Resistance Check
+            --Wood:|**@{Wood}**
+            --Earth:|**@{Earth}**
+            --Yin:|**[^Yin.base]**
+            --Yang:|**[^Yang.base]**
+            --?? $Bonus.base <> 0 ?? Bonus:|**[^Bonus.base]**
+            --Result |[[ [NH] @{Wood} + @{Earth} + [$Bonus] {?{Bonus Chi|0}} + abs( [$Yin] {1d10-1} - [$Yang] {1d10-1} ) ]]
+            --?? $Yin.base == $Yang.base AND $Yin.base &gt; 0 ?? !Critical Success|**Critical Success! Regain [^Yin.base] Chi**
+            --?? $Yin.base == $Yang.base AND $Yin.base <= 0 ?? !Critical Failure|**Critical Failure! Lose FIVE Chi**
+            --?? $Yin.base > $Yang.base ?? !Yin dominant|** Your Yin is dominant**
+            --?? $Yang.base > $Yin.base ?? !Yang dominant|** Your Yang is dominant** }}" >
+            <span data-i18n="Resistance-button">Resistance check</span>
+        </button>
+    </p>
     <br />
-    <input name="attr_tab" class="sheet-tab sheet-tab1" value="1" title="Breath of Life" checked="checked" type="radio" />
-    <input name="attr_tab" class="sheet-tab sheet-tab2" value="2" title="Skills" type="radio" />
-    <input name="attr_tab" class="sheet-tab sheet-tab3" value="3" title="Tao-Magic" type="radio" />
-    <input name="attr_tab" class="sheet-tab sheet-tab4" value="4" title="Equipment" type="radio" />
-    <input name="attr_tab" class="sheet-tab sheet-tab5" value="5" title="Defining Deeds" type="radio" />
+    <input name="attr_tab" class="sheet-tab sheet-tab1" value="1" data-i18n-title="Breath-of-Life-Title" title="Breath of Life" checked="checked" type="radio" />
+    <input name="attr_tab" class="sheet-tab sheet-tab2" value="2" data-i18n-title="Skills-Title" title="Skills" type="radio" />
+    <input name="attr_tab" class="sheet-tab sheet-tab3" value="3" data-i18n-title="Tao-Magic-Title" title="Tao-Magic" type="radio" />
+    <input name="attr_tab" class="sheet-tab sheet-tab4" value="4" data-i18n-title="Equipment-Title" title="Equipment" type="radio" />
+    <input name="attr_tab" class="sheet-tab sheet-tab5" value="5" data-i18n-title="Defining-Deeds-Title" title="Defining Deeds" type="radio" />
     <br />
     <br />
     <div class="sheet-tab-content sheet-tab1">
@@ -1105,7 +1134,7 @@
                                 --Skill Level:|**@{metskilllvl}**
                                 --Yin:|**[^Yin.base]**
                                 --Yang:|**[^Yang.base]**
-                                --?? $Bonus.base > 0 ?? Bonus:|**[^Bonus.base]**
+                                --?? $Bonus.base <> 0 ?? Bonus:|**[^Bonus.base]**
                                 --Result|[[ [NH] @{Metal} + [$Bonus] {?{Bonus Chi|0}} + @{metskilllvl} + abs([$Yin] {1d10-1} - [$Yang] {1d10-1})]]
                                 --?? $Yin.base == $Yang.base AND $Yin.base &gt; 0 ?? !Critical Success|** Critical Success! Regain [^Yin.base] Chi and add [^Yin.base] to your damage**
                                 --?? $Yin.base == $Yang.base AND $Yin.base <= 0 ?? !Critical Failure|** Critical Failure Lose FIVE Chi **
@@ -1150,14 +1179,6 @@
                                 <span data-i18n="E">E</span>
                                 <input name="attr_E" style="width: 30px;" type="text" /> 
                             </p>
-                            <p>
-                                <span data-i18n="Techniques">Techniques</span>
-                            </p>
-                            <p>
-                                <span data-i18n="TechniquesText">
-                                    <textarea name="attr_mettech" style="width: 600px; height: 56px;"></textarea>
-                                </span>
-                            </p>
                         </fieldset>
                     </td>
                 </tr>
@@ -1184,7 +1205,7 @@
                                 --Skill Level:|**@{watskilllvl}**
                                 --Yin:|**[^Yin.base]**
                                 --Yang:|**[^Yang.base]**
-                                --?? $Bonus.base > 0 ?? Bonus:|**[^Bonus.base]**
+                                --?? $Bonus.base <> 0 ?? Bonus:|**[^Bonus.base]**
                                 --Result:|[[ [NH] @{Water} + @{watskilllvl} + [$Bonus] {?{Bonus Chi|0}} + abs([$Yin] {1d10-1} - [$Yang] {1d10-1})]]
                                 --?? $Yin.base == $Yang.base AND $Yin.base &gt; 0 ?? !Critical Success|**Critical Success! Regain [^Yin.base] Chi**
                                 --?? $Yin.base == $Yang.base AND $Yin.base <= 0 ?? !Critical Failure|**Critical Failure! Lose FIVE Chi**
@@ -1211,7 +1232,7 @@
                                 --Skill Level:|**@{woodskilllvl}**
                                 --Yin:|**[^Yin.base]**
                                 --Yang:|**[^Yang.base]**
-                                --?? $Bonus.base > 0 ?? Bonus:|**[^Bonus.base]**
+                                --?? $Bonus.base <> 0 ?? Bonus:|**[^Bonus.base]**
                                 --Result:|[[ [NH] @{Wood} + @{woodskilllvl} + [$Bonus] {?{Bonus Chi|0}} + abs([$Yin] {1d10-1} - [$Yang] {1d10-1})]]
                                 --?? $Yin.base == $Yang.base AND $Yin.base &gt; 0 ?? !Critical Success|**Critical Success! Regain [^Yin.base] Chi**
                                 --?? $Yin.base == $Yang.base AND $Yin.base <= 0 ?? !Critical Failure|**Critical Failure! Lose FIVE Chi**
@@ -1252,7 +1273,7 @@
                                 --Skill Level:|**@{fireskilllvl}**
                                 --Yin:|**[^Yin.base]**
                                 --Yang:|**[^Yang.base]**
-                                --?? $Bonus.base > 0 ?? Bonus:|**[^Bonus.base]**
+                                --?? $Bonus.base <> 0 ?? Bonus:|**[^Bonus.base]**
                                 --Result:|[[ [NH] @{Fire} + @{fireskilllvl} + [$Bonus] {?{Bonus Chi|0}} + abs([$Yin] {1d10-1} - [$Yang] {1d10-1})]]
                                 --?? $Yin.base == $Yang.base AND $Yin.base &gt; 0 ?? !Critical Success|**Critical Success! Regain [^Yin.base] Chi**
                                 --?? $Yin.base == $Yang.base AND $Yin.base <= 0 ?? !Critical Failure|**Critical Failure! Lose FIVE Chi**
@@ -1279,7 +1300,7 @@
                                 --Skill Level:|**@{earthskilllvl}**
                                 --Yin:|**[^Yin.base]**
                                 --Yang:|**[^Yang.base]**
-                                --?? $Bonus.base > 0 ?? Bonus:|**[^Bonus.base]**
+                                --?? $Bonus.base <> 0 ?? Bonus:|**[^Bonus.base]**
                                 --Result:|[[ [NH] @{Earth} + @{earthskilllvl} + [$Bonus] {?{Bonus Chi|0}} + abs([$Yin] {1d10-1} - [$Yang] {1d10-1})]]
                                 --?? $Yin.base == $Yang.base AND $Yin.base &gt; 0 ?? !Critical Success|**Critical Success! Regain [^Yin.base] Chi**
                                 --?? $Yin.base == $Yang.base AND $Yin.base <= 0 ?? !Critical Failure|**Critical Failure! Lose FIVE Chi**
@@ -1304,28 +1325,28 @@
     </div>
 
     <div class="sheet-tab-content sheet-tab3">
-    <table>
-        <tbody>
-            <tr>
-                <th colspan="5" data-i18n="TAO-MAGIC">TAO - MAGIC</th>
-            </tr>
-            <tr>
-                <td style="width: 205px;" data-i18n="Tao-Techniques">Tao - Techniques</td>
-                <td style="width: 53px;" data-i18n="Level">Level</td>
-                <td style="width: 20px;" data-i18n="T">T</td>
-                <td style="width: 23px;" data-i18n="M">M</td>
-                <td style="width: 200px;" data-i18n="Effects">Effects</td>
-            </tr>
-        </tbody>
-    </table>
+        <table>
+            <tbody>
+                <tr>
+                    <th colspan="5" data-i18n="TAO-MAGIC">TAO - MAGIC</th>
+                </tr>
+                <tr>
+                    <td style="width: 205px;" data-i18n="Tao-Techniques">Tao - Techniques</td>
+                    <td style="width: 53px;" data-i18n="Level">Level</td>
+                    <td style="width: 20px;" data-i18n="T">T</td>
+                    <td style="width: 23px;" data-i18n="M">M</td>
+                    <td style="width: 200px;" data-i18n="Effects">Effects</td>
+                </tr>
+            </tbody>
+        </table>
     
-    <fieldset class="repeating_tao">
-        <input style="width: 200px;" name="attr_taoname" type="text" />
-        <input style="width: 50px;" name="attr_taolvl" type="number" />
-        <input style="width: 20px;" name="attr_taochk" value="1" type="checkbox">
-        <input style="width: 20px;" name="attr_taochk" value="2" type="checkbox">
-        <input style="width: 400px;" name="attr_taofx" type="text" />
-    </fieldset>
+        <fieldset class="repeating_tao">
+            <input style="width: 200px;" name="attr_taoname" type="text" />
+            <input style="width: 50px;" name="attr_taolvl" type="number" />
+            <input style="width: 20px;" name="attr_taochk" value="1" type="checkbox">
+            <input style="width: 20px;" name="attr_taochk" value="2" type="checkbox">
+            <input style="width: 400px;" name="attr_taofx" type="text" />
+        </fieldset>
     </div>
 
     <div class="sheet-tab-content sheet-tab4">
