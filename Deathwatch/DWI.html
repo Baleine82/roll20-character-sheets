@@ -9,16 +9,16 @@
         <div></div><!--empty div gridbox1-->
         <div class="gridbox2">
             <div class="spacing" style="width:100%; height:12px"></div>
-            <input name="attr_character_name" type="text" style="font-weight:bold" placeholder="Character Name" title="Character Name" />
-            <input name="attr_Renown" type="number" placeholder="Rat." style="width:15%; font-weight:bold" title="Renown Rating" />
+            <input name="attr_character_name" type="text" style="font-weight:bold" placeholder="Character Name" title="Character Name" data-i18n-title="CharacterName" data-i18n-placeholder="CharacterName"  />
+            <input name="attr_Renown" type="number" placeholder="Rat." style="width:15%; font-weight:bold" title="Renown Rating" data-i18n-title="RenownRatingTitle" />
             <div class="spacing" style="width:1%"></div>
-            <select name="attr_renownRank" style="width:84%; font-weight:bold; text-align:center" title="Renown Rank">
-                <option value="Select" selected>Renown Rank</option>
-                <option value="Initiated">Initiated (0-19)</option>
-                <option value="Respected">Respected (20-39)</option>
-                <option value="Distinguished">Distinguished (59-40)</option>
-                <option value="Famed">Famed (60-79)</option>
-                <option value="Hero">Hero (80+)</option>
+            <select name="attr_renownRank" style="width:84%; font-weight:bold; text-align:center" title="Renown Rank" data-i18n-title="RenownRankTitle">
+                <option value="Select" selected data-i18n="renownRankTitle">Renown Rank</option>
+                <option value="Initiated" data-i18n="renownInitiated">Initiated (0-19)</option>
+                <option value="Respected" data-i18n="renownRespected">Respected (20-39)</option>
+                <option value="Distinguished" data-i18n="renownDistinguished">Distinguished (59-40)</option>
+                <option value="Famed" data-i18n="renownFamed">Famed (60-79)</option>
+                <option value="Hero" data-i18n="renownHero">Hero (80+)</option>
             </select>
         </div>
         <div class="gridbox3">
@@ -28,10 +28,10 @@
         </div>
         <div class="gridbox4">
             <div class="spacing" style="width:100%; height:12px"></div>
-            <input name="attr_Player" type="text" style="font-weight:bold" placeholder="Player Name" title="Player Name" />
-            <input name="attr_Speciality" style="width:84%; font-weight:bold" type="text" placeholder="Speciality Name" title="Speciality Name" />
+            <input name="attr_Player" type="text" style="font-weight:bold" placeholder="Player Name" title="Player Name" data-i18n-placeholder="PlayerName" data-i18-title="PlayerName"/>
+            <input name="attr_Speciality" style="width:84%; font-weight:bold" type="text" placeholder="Speciality Name" title="Speciality Name" data-i18n-placeholder="Speciality" data-i18n-title="Speciality" />
             <div class="spacing" style="width:1%"></div>
-            <input name="attr_Rank" type="number" placeholder="Rank" style="width:15%; font-weight:bold" title="Speciality Rank" />
+            <input name="attr_Rank" type="number" placeholder="Rank" style="width:15%; font-weight:bold" title="Speciality Rank" data-i18n-title="Rank"/>
         </div>
         <div></div><!--empty div gridbox5-->
     </div>
@@ -39,51 +39,51 @@
     <div>
         <h3>&#10070; Characteristics &#10070;</h3>
         <div class="CharGrid">
-            <label style="text-align:center; line-height:16px; white-space:pre; height:35px">Weapon Skill&#10;(WS)</label>
-            <label style="text-align:center; line-height:16px; white-space:pre; height:35px">Ballistic Skill&#10;(BS)</label>
-            <label style="text-align:center; line-height:16px; white-space:pre; height:35px">Strength&#10;(S)</label>
-            <label style="text-align:center; line-height:16px; white-space:pre; height:35px">Toughness&#10;(T)</label>
-            <label style="text-align:center; line-height:16px; white-space:pre; height:35px">Agility&#10;(Ag)</label>
-            <label style="text-align:center; line-height:16px; white-space:pre; height:35px">Intelligence&#10;(Int)</label>
-            <label style="text-align:center; line-height:16px; white-space:pre; height:35px">Perception&#10;(Per)</label>
-            <label style="text-align:center; line-height:16px; white-space:pre; height:35px">Willpower&#10;(WP)</label>
-            <label style="text-align:center; line-height:16px; white-space:pre; height:35px">Fellowship&#10;(Fel)</label>
+            <label style="text-align:center; line-height:16px; white-space:pre; height:35px" data-i18n="WeaponSkill">Weapon Skill&#10;(WS)</label>
+            <label style="text-align:center; line-height:16px; white-space:pre; height:35px" data-i18n="BallisticSkill">Ballistic Skill&#10;(BS)</label>
+            <label style="text-align:center; line-height:16px; white-space:pre; height:35px" data-i18n="Strength">Strength&#10;(S)</label>
+            <label style="text-align:center; line-height:16px; white-space:pre; height:35px" data-i18n="Toughness">Toughness&#10;(T)</label>
+            <label style="text-align:center; line-height:16px; white-space:pre; height:35px" data-i18n="Agility">Agility&#10;(Ag)</label>
+            <label style="text-align:center; line-height:16px; white-space:pre; height:35px" data-i18n="Intelligence">Intelligence&#10;(Int)</label>
+            <label style="text-align:center; line-height:16px; white-space:pre; height:35px" data-i18n="Perception">Perception&#10;(Per)</label>
+            <label style="text-align:center; line-height:16px; white-space:pre; height:35px" data-i18n="Willpower">Willpower&#10;(WP)</label>
+            <label style="text-align:center; line-height:16px; white-space:pre; height:35px" data-i18n="Fellowship">Fellowship&#10;(Fel)</label>
         </div>
         <div class="CharGrid">
             <div>
-                <label style="text-align:center; font-size:9px; width:45%">Starting</label>
+                <label style="text-align:center; font-size:9px; width:45%" data-i18n="StartingCharacteristicValue">Starting</label>
                 <input name="attr_startingWeaponSkill" type="number" value="0" style="width:55%" />
             </div>
             <div>
-                <label style="text-align:center; font-size:9px; width:45%">Starting</label>
+                <label style="text-align:center; font-size:9px; width:45%" data-i18n="StartingCharacteristicValue">Starting</label>
                 <input name="attr_startingBallisticSkill" type="number" value="0" style="width:55%" />
             </div>
             <div>
-                <label style="text-align:center; font-size:9px; width:45%">Starting</label>
+                <label style="text-align:center; font-size:9px; width:45%" data-i18n="StartingCharacteristicValue">Starting</label>
                 <input name="attr_startingStrength" type="number" value="0" style="width:55%" />
             </div>
             <div>
-                <label style="text-align:center; font-size:9px; width:45%">Starting</label>
+                <label style="text-align:center; font-size:9px; width:45%" data-i18n="StartingCharacteristicValue">Starting</label>
                 <input name="attr_startingToughness" type="number" value="0" style="width:55%" />
             </div>
             <div>
-                <label style="text-align:center; font-size:9px; width:45%">Starting</label>
+                <label style="text-align:center; font-size:9px; width:45%" data-i18n="StartingCharacteristicValue">Starting</label>
                 <input name="attr_startingAgility" type="number" value="0" style="width:55%" />
             </div>
             <div>
-                <label style="text-align:center; font-size:9px; width:45%">Starting</label>
+                <label style="text-align:center; font-size:9px; width:45%" data-i18n="StartingCharacteristicValue">Starting</label>
                 <input name="attr_startingIntelligence" type="number" value="0" style="width:55%" />
             </div>
             <div>
-                <label style="text-align:center; font-size:9px; width:45%">Starting</label>
+                <label style="text-align:center; font-size:9px; width:45%" data-i18n="StartingCharacteristicValue">Starting</label>
                 <input name="attr_startingPerception" type="number" value="0" style="width:55%" />
             </div>
             <div>
-                <label style="text-align:center; font-size:9px; width:45%">Starting</label>
+                <label style="text-align:center; font-size:9px; width:45%" data-i18n="StartingCharacteristicValue">Starting</label>
                 <input name="attr_startingWillpower" type="number" value="0" style="width:55%" />
             </div>
             <div>
-                <label style="text-align:center; font-size:9px; width:45%">Starting</label>
+                <label style="text-align:center; font-size:9px; width:45%" data-i18n="StartingCharacteristicValue">Starting</label>
                 <input name="attr_startingFellowship" type="number" value="0" style="width:55%" />
             </div>
         </div>
@@ -156,82 +156,82 @@
             <div>
                 <div class="spacing" style="width:8%"></div>
                 <span style="width:32%; margin:0">Adv.</span>
-                <input style="width:13%; height:10px" name="attr_advancedWeaponSkill1" type="checkbox" value="5" title="Simple" />
-                <input style="width:13%; height:10px" name="attr_advancedWeaponSkill2" type="checkbox" value="5" title="Intermediate" />
-                <input style="width:13%; height:10px" name="attr_advancedWeaponSkill3" type="checkbox" value="5" title="Trained" />
-                <input style="width:13%; height:10px" name="attr_advancedWeaponSkill4" type="checkbox" value="5" title="Expert" />
+                <input style="width:13%; height:10px" name="attr_advancedWeaponSkill1" type="checkbox" value="5" title="Simple" data-i18n-title="Simple"/>
+                <input style="width:13%; height:10px" name="attr_advancedWeaponSkill2" type="checkbox" value="5" title="Intermediate" data-i18n-title="Intermediate"/>
+                <input style="width:13%; height:10px" name="attr_advancedWeaponSkill3" type="checkbox" value="5" title="Trained" data-i18n-title="Trained"/>
+                <input style="width:13%; height:10px" name="attr_advancedWeaponSkill4" type="checkbox" value="5" title="Expert" data-i18n-title="Expert"/>
                 <div class="spacing" style="width:8%"></div>
             </div>
             <div>
                 <div class="spacing" style="width:8%"></div>
                 <span style="width:32%; margin:0">Adv.</span>
-                <input style="width:13%; height:10px" name="attr_advancedBallisticSkill1" type="checkbox" value="5" title="Simple" />
-                <input style="width:13%; height:10px" name="attr_advancedBallisticSkill2" type="checkbox" value="5" title="Intermediate" />
-                <input style="width:13%; height:10px" name="attr_advancedBallisticSkill3" type="checkbox" value="5" title="Trained" />
-                <input style="width:13%; height:10px" name="attr_advancedBallisticSkill4" type="checkbox" value="5" title="Expert" />
+                <input style="width:13%; height:10px" name="attr_advancedBallisticSkill1" type="checkbox" value="5" title="Simple" data-i18n-title="Simple"/>
+                <input style="width:13%; height:10px" name="attr_advancedBallisticSkill2" type="checkbox" value="5" title="Intermediate" data-i18n-title="Intermediate" />
+                <input style="width:13%; height:10px" name="attr_advancedBallisticSkill3" type="checkbox" value="5" title="Trained" data-i18n-title="Trained"/>
+                <input style="width:13%; height:10px" name="attr_advancedBallisticSkill4" type="checkbox" value="5" title="Expert" data-i18n-title="Expert"/>
                 <div class="spacing" style="width:8%"></div>
             </div>
             <div>
                 <div class="spacing" style="width:8%"></div>
                 <span style="width:32%; margin:0">Adv.</span>
-                <input style="width:13%; height:10px" name="attr_advancedStrength1" type="checkbox" value="5" title="Simple" />
-                <input style="width:13%; height:10px" name="attr_advancedStrength2" type="checkbox" value="5" title="Intermediate" />
-                <input style="width:13%; height:10px" name="attr_advancedStrength3" type="checkbox" value="5" title="Trained" />
-                <input style="width:13%; height:10px" name="attr_advancedStrength4" type="checkbox" value="5" title="Expert" />
+                <input style="width:13%; height:10px" name="attr_advancedStrength1" type="checkbox" value="5" title="Simple" data-i18n-title="Simple"/>
+                <input style="width:13%; height:10px" name="attr_advancedStrength2" type="checkbox" value="5" title="Intermediate" data-i18n-title="Intermediate"/>
+                <input style="width:13%; height:10px" name="attr_advancedStrength3" type="checkbox" value="5" title="Trained" data-i18n-title="Trained"/>
+                <input style="width:13%; height:10px" name="attr_advancedStrength4" type="checkbox" value="5" title="Expert" data-i18n-title="Expert"/>
                 <div class="spacing" style="width:8%"></div>
             </div>
             <div>
                 <div class="spacing" style="width:8%"></div>
                 <span style="width:32%; margin:0">Adv.</span>
-                <input style="width:13%; height:10px" name="attr_advancedToughness1" type="checkbox" value="5" title="Simple" />
-                <input style="width:13%; height:10px" name="attr_advancedToughness2" type="checkbox" value="5" title="Intermediate" />
-                <input style="width:13%; height:10px" name="attr_advancedToughness3" type="checkbox" value="5" title="Trained" />
-                <input style="width:13%; height:10px" name="attr_advancedToughness4" type="checkbox" value="5" title="Expert" />
+                <input style="width:13%; height:10px" name="attr_advancedToughness1" type="checkbox" value="5" title="Simple" data-i18n-title="Simple"/>
+                <input style="width:13%; height:10px" name="attr_advancedToughness2" type="checkbox" value="5" title="Intermediate" data-i18n-title="Intermediate"/>
+                <input style="width:13%; height:10px" name="attr_advancedToughness3" type="checkbox" value="5" title="Trained" data-i18n-title="Trained"/>
+                <input style="width:13%; height:10px" name="attr_advancedToughness4" type="checkbox" value="5" title="Expert" data-i18n-title="Expert"/>
                 <div class="spacing" style="width:%"></div>
             </div>
             <div>
                 <div class="spacing" style="width:8%"></div>
                 <span style="width:32%; margin:0">Adv.</span>
-                <input style="width:13%; height:10px" name="attr_advancedAgility1" type="checkbox" value="5" title="Simple" />
-                <input style="width:13%; height:10px" name="attr_advancedAgility2" type="checkbox" value="5" title="Intermediate" />
-                <input style="width:13%; height:10px" name="attr_advancedAgility3" type="checkbox" value="5" title="Trained" />
-                <input style="width:13%; height:10px" name="attr_advancedAgility4" type="checkbox" value="5" title="Expert" />
+                <input style="width:13%; height:10px" name="attr_advancedAgility1" type="checkbox" value="5" title="Simple" data-i18n-title="Simple"/>
+                <input style="width:13%; height:10px" name="attr_advancedAgility2" type="checkbox" value="5" title="Intermediate" data-i18n-title="Intermediate"/>
+                <input style="width:13%; height:10px" name="attr_advancedAgility3" type="checkbox" value="5" title="Trained" data-i18n-title="Trained"/>
+                <input style="width:13%; height:10px" name="attr_advancedAgility4" type="checkbox" value="5" title="Expert" data-i18n-title="Expert"/>
                 <div class="spacing" style="width:8%"></div>
             </div>
             <div>
                 <div class="spacing" style="width:8%"></div>
                 <span style="width:32%; margin:0">Adv.</span>
-                <input style="width:13%; height:10px" name="attr_advancedIntelligence1" type="checkbox" value="5" title="Simple" />
-                <input style="width:13%; height:10px" name="attr_advancedIntelligence2" type="checkbox" value="5" title="Intermediate" />
-                <input style="width:13%; height:10px" name="attr_advancedIntelligence3" type="checkbox" value="5" title="Trained" />
-                <input style="width:13%; height:10px" name="attr_advancedIntelligence4" type="checkbox" value="5" title="Expert" />
+                <input style="width:13%; height:10px" name="attr_advancedIntelligence1" type="checkbox" value="5" title="Simple" data-i18n-title="Simple"/>
+                <input style="width:13%; height:10px" name="attr_advancedIntelligence2" type="checkbox" value="5" title="Intermediate" data-i18n-title="Intermediate"/>
+                <input style="width:13%; height:10px" name="attr_advancedIntelligence3" type="checkbox" value="5" title="Trained" data-i18n-title="Trained"/>
+                <input style="width:13%; height:10px" name="attr_advancedIntelligence4" type="checkbox" value="5" title="Expert" data-i18n-title="Expert"/>
                 <div class="spacing" style="width:8%"></div>
             </div>
             <div>
                 <div class="spacing" style="width:8%"></div>
                 <span style="width:32%; margin:0">Adv.</span>
-                <input style="width:13%; height:10px" name="attr_advancedPerception1" type="checkbox" value="5" title="Simple" />
-                <input style="width:13%; height:10px" name="attr_advancedPerception2" type="checkbox" value="5" title="Intermediate" />
-                <input style="width:13%; height:10px" name="attr_advancedPerception3" type="checkbox" value="5" title="Trained" />
-                <input style="width:13%; height:10px" name="attr_advancedPerception4" type="checkbox" value="5" title="Expert" />
+                <input style="width:13%; height:10px" name="attr_advancedPerception1" type="checkbox" value="5" title="Simple" data-i18n-title="Simple"/>
+                <input style="width:13%; height:10px" name="attr_advancedPerception2" type="checkbox" value="5" title="Intermediate" data-i18n-title="Intermediate"/>
+                <input style="width:13%; height:10px" name="attr_advancedPerception3" type="checkbox" value="5" title="Trained" data-i18n-title="Trained"/>
+                <input style="width:13%; height:10px" name="attr_advancedPerception4" type="checkbox" value="5" title="Expert" data-i18n-title="Expert"/>
                 <div class="spacing" style="width:8%"></div>
             </div>
             <div>
                 <div class="spacing" style="width:8%"></div>
                 <span style="width:32%; margin:0">Adv.</span>
-                <input style="width:13%; height:10px" name="attr_advancedWillpower1" type="checkbox" value="5" title="Simple" />
-                <input style="width:13%; height:10px" name="attr_advancedWillpower2" type="checkbox" value="5" title="Intermediate" />
-                <input style="width:13%; height:10px" name="attr_advancedWillpower3" type="checkbox" value="5" title="Trained" />
-                <input style="width:13%; height:10px" name="attr_advancedWillpower4" type="checkbox" value="5" title="Expert" />
+                <input style="width:13%; height:10px" name="attr_advancedWillpower1" type="checkbox" value="5" title="Simple" data-i18n-title="Simple"/>
+                <input style="width:13%; height:10px" name="attr_advancedWillpower2" type="checkbox" value="5" title="Intermediate" data-i18n-title="Intermediate"/>
+                <input style="width:13%; height:10px" name="attr_advancedWillpower3" type="checkbox" value="5" title="Trained" data-i18n-title="Trained"/>
+                <input style="width:13%; height:10px" name="attr_advancedWillpower4" type="checkbox" value="5" title="Expert" data-i18n-title="Expert"/>
                 <div class="spacing" style="width:8%"></div>
             </div>
             <div>
                 <div class="spacing" style="width:8%"></div>
                 <span style="width:32%; margin:0">Adv.</span>
-                <input style="width:13%; height:10px" name="attr_advancedFellowship1" type="checkbox" value="5" title="Simple" />
-                <input style="width:13%; height:10px" name="attr_advancedFellowship2" type="checkbox" value="5" title="Intermediate" />
-                <input style="width:13%; height:10px" name="attr_advancedFellowship3" type="checkbox" value="5" title="Trained" />
-                <input style="width:13%; height:10px" name="attr_advancedFellowship4" type="checkbox" value="5" title="Expert" />
+                <input style="width:13%; height:10px" name="attr_advancedFellowship1" type="checkbox" value="5" title="Simple" data-i18n-title="Simple"/>
+                <input style="width:13%; height:10px" name="attr_advancedFellowship2" type="checkbox" value="5" title="Intermediate" data-i18n-title="Intermediate"/>
+                <input style="width:13%; height:10px" name="attr_advancedFellowship3" type="checkbox" value="5" title="Trained" data-i18n-title="Trained"/>
+                <input style="width:13%; height:10px" name="attr_advancedFellowship4" type="checkbox" value="5" title="Expert" data-i18n-title="Expert"/>
                 <div class="spacing" style="width:8%"></div>
             </div>
         </div>
@@ -239,57 +239,58 @@
     <!-- Fate, Fatigue and GM Rolls -->
     <div style="margin: 5px 0 5px 0;">
         <div class="spacing" style="width:1%"></div>
-        <span style="width:4%">Pool</span>
+        <span style="width:4%" data-i18n="PoolFatePointsValueName">Pool</span>
         <input style="width:4%" name="attr_Fate_max" type="number" value="0" />
-        <label title="---Spending Fate Points---&#10;As a Free Action (or Reaction) the character can Spend FP in several effects:&#10;*Re-roll a failed test once. The results of the re-roll are final.&#10;*Gain a +10 bonus to a test. This must be chosen before dice are rolled.&#10;*Add 1 extra Degree of Success to a test (test must be successful for this effect to apply)&#10;*Count as having rolled a 10 for Initiative Roll.&#10;*Instantly removes 1d10 Damage (this does not remove Critical Damage).&#10;*Instantly recover from being Stunned.&#10;*Enter Squad Mode without Cohesion Test.&#10;*Gain +1 Bonus to Rank, for Solo Mode Abilities.&#10;*Remove 1 Level of Fatigue.&#10;&#10;Tipically Spent FPs are restored by the end of the gaming season, at GMs discretion.&#10;&#10;--Burning Fate Points--&#10;The character may choose to burn a FP and permanently reduce&#10;his Fate Points pool by one. The result is that the character survives&#10;whatever it was that would have killed him, but only barely.&#10;&#10;A Fate Point may be burnt even if it has already been spent for that gaming session."
-            style="width:15%; text-align:center" class="help">&#9204; Fate Points &#128712; &#9205;</label>
+        <label title="---Spending Fate Points---&#10;As a Free Action (or Reaction) the character can Spend FP in several effects:&#10;*Re-roll a failed test once. The results of the re-roll are final.&#10;*Gain a +10 bonus to a test. This must be chosen before dice are rolled.&#10;*Add 1 extra Degree of Success to a test (test must be successful for this effect to apply)&#10;*Count as having rolled a 10 for Initiative Roll.&#10;*Instantly removes 1d10 Damage (this does not remove Critical Damage).&#10;*Instantly recover from being Stunned.&#10;*Enter Squad Mode without Cohesion Test.&#10;*Gain +1 Bonus to Rank, for Solo Mode Abilities.&#10;*Remove 1 Level of Fatigue.&#10;&#10;Tipically Spent FPs are restored by the end of the gaming season, at GMs discretion.&#10;&#10;--Burning Fate Points--&#10;The character may choose to burn a FP and permanently reduce&#10;his Fate Points pool by one. The result is that the character survives&#10;whatever it was that would have killed him, but only barely.&#10;&#10;A Fate Point may be burnt even if it has already been spent for that gaming session." 
+            style="width:15%; text-align:center" data-i18n-title="FatePointsActions" data-i18n="FatePoints" class="help">&#9204; Fate Points &#128712; &#9205; 
+        </label>
         <input style="width:4%" name="attr_Fate" type="number" value="0" />
-        <span style="width:6%">Current</span>
+        <span style="width:6%" data-i18n="CurrentFatePointsValueName" >Current</span>
         <!--w36-->
         <div class="spacing" style="width:2%"></div>
-        <input style="width:9%" type="checkbox" name="attr_gmroll" value="/w gm" class="fancy" title="Sets all macro rolls to be visible only to the GM." />
+        <input style="width:9%" type="checkbox" name="attr_gmroll" value="/w gm" class="fancy" title="Sets all macro rolls to be visible only to the GM." data-i18n-title="SetMacroToBeVisibleOnlyToGM" />
         <div class="spacing" style="width:2%"></div>
         <!--w16-->
-        <button name="roll_RighteousFury" type="roll" style="width:13%"
+        <button name="roll_RighteousFury" type="roll" style="width:13%" data-i18n="RighteousFury"
             value="@{gmroll}&{template:custom} {{testtarget=[[?{Threshold|0}]] }} {{d100=[[1d100cs1cf100]] }} {{fury=@{character_name}&#10; }} {{xd10= ?{Target is?|On Foot,**Dealing [[1d10!]] Bonus Damage!**|Vehicle,**Dealing a Critical Hit! [[1d5]]**} }}">
             <label>Righteous Fury!</label>
         </button>
         <div class="spacing" style="width:0.5%"></div>
-        <button name="roll_XenosRighteousFury" type="roll" style="width:7.5%"
+        <button name="roll_XenosRighteousFury" type="roll" style="width:7.5%" data-i18n="VsXenos"
             value="@{gmroll}&{template:custom} {{name=@{character_name} Unleashes a Righteous Fury against the Xeno scum!&#10;?{Target is?|On Foot,**Dealing [[1d10!]] Bonus Damage!**|Vehicle,**Dealing a Critical Hit! [[1d5]]**} }}">
             <label>Vs Xenos</label>
         </button>
         <!--w15-->
         <div class="spacing" style="width:2%"></div>
-        <span style="width:5%; cursor:help" title="Toughness Bonus">Limit:</span>
-        <span name="attr_toughnessBonus" style="width:1%; cursor:help" title="Toughness Bonus"></span>
+        <span style="width:5%; cursor:help" title="Toughness Bonus" data-i18n="Limit" data-i18n-title="ToughnessBonus">Limit:</span>
+        <span name="attr_toughnessBonus" style="width:1%; cursor:help" title="Toughness Bonus" data-i18n-title="ToughnessBonus"></span>
         <span style="width:2%">&#9204;</span>
         <input style="width:10%" type="checkbox" name="attr_fatiguePenalty" value="10" class="fancy2"
             title="Any level of Fatigue adds a -10 Penalty to all Tests.&#10;&#10;Click here to apply this Penalty&#10;This will be seen in the Characteristic Scores above&#10;Uncheck to remove Penalty.&#10;&#10;Fatigue Limit equals Toughness Bonus.&#10;If the Character excedes its Fatigue Limit&#10;it falls Unconcious for 10 min -TB.&#10;&#10;Full rules can be found in Pag. 251" />
         <span style="width:2%">&#9205;</span>
         <input style="width:4%" name="attr_Fatigue" type="number" value="0" />
-        <span style="width:6%">Level</span>
+        <span style="width:6%" data-i18n="Level">Level</span>
         <div class="spacing" style="width:1%"></div>
     </div>
 </div>
 <!-- Tabs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
 <input type="hidden" class="tabstoggle" name="attr_sheetTab" value="skill" />
 <div>
-    <button type="action" name="act_skill" title="Basic, Advanced and Custom Skills">Skills</button>
+    <button type="action" name="act_skill" title="Basic, Advanced and Custom Skills" data-i18n="Skills" data-i18n-title="BasicAdvancedAndCustomSkills">Skills</button>
     <div class="spacing" style="width:1%"></div>
-    <button type="action" name="act_combat" title="Armour, Weapons, Initiative and more">Combat</button>
+    <button type="action" name="act_combat" title="Armour, Weapons, Initiative and more" data-i18n="Combat" data-i18n-title="ArmorWeaponsIniativeAndMore">Combat</button>
     <div class="spacing" style="width:1%"></div>
-    <button type="action" name="act_talent" title="Special Abilities, Talents, Traits and more">Abilities</button>
+    <button type="action" name="act_talent" title="Special Abilities, Talents, Traits and more" data-i18n="Abilities" data-i18n-title="SpecialAbilitiesTalentsTraitsAndMore">Abilities</button>
     <div class="spacing" style="width:1%"></div>
-    <button type="action" name="act_psykana" title="Psychic Techniques">Psykana</button>
+    <button type="action" name="act_psykana" title="Psychic Techniques" data-i18n="Psykana" data-i18n-title="PsychicPowers">Psykana</button>
     <div class="spacing" style="width:1%"></div>
-    <button type="action" name="act_journal" title="Background, Chapter, and other details">Journal</button>
+    <button type="action" name="act_journal" title="Background, Chapter, and other details" data-i18n="Journal" data-i18n-title="BackgroundChapterAndOtherDetails">Journal</button>
     <div class="spacing" style="width:1%"></div>
-    <button type="action" name="act_vehicles" title="Vehicle Statistics and Macros">Vehicles</button>
+    <button type="action" name="act_vehicles" title="Vehicle Statistics and Macros" data-i18n="Vehicles" data-i18n-title="VehicleStatisticsAndMacros">Vehicles</button>
     <div class="spacing" style="width:1%"></div>
-    <button type="action" name="act_ship" title="Experience and Advancements">XP</button>
+    <button type="action" name="act_ship" title="Experience and Advancements" data-i18n="XP" data-i18n-title="ExperienceAndAdvancements">XP</button>
     <div class="spacing" style="width:1%"></div>
-    <button type="action" name="act_npcs" title="NPCs and Companions mini sheet">NPCs</button>
+    <button type="action" name="act_npcs" title="NPCs and Companions mini sheet" data-i18n="NPCs" data-i18n-title="NPCsAndCompanionsMiniSheet">NPCs</button>
     <div class="spacing" style="width:1%"></div>
     <button type="action" name="act_config" style="width:4%; font-size:22px" title="Extras">&#128736;</button>
 </div>
@@ -301,21 +302,21 @@
         <div class="leftbox">
             <h3>&#128922; Basic Skills &#128922;</h3>
                 <div class="grid8b">
-                    <label class="label1">Roll Test</label>
-                    <label class="label1">Info</label>
-                    <label class="label2">Trained</label>
+                    <label class="label1" data-i18n="RollTest">Roll Test</label>
+                    <label class="label1" data-i18n="Info">Info</label>
+                    <label class="label2" data-i18n="Trained">Trained</label>
                     <label class="label2">+10</label>
                     <label class="label2">+20</label>
-                    <label class="label2">Talent</label>
-                    <label class="label2">Mod</label>
-                    <label class="label2">Total</label>
+                    <label class="label2" data-i18n="Talent">Talent</label>
+                    <label class="label2" data-i18n="Mod">Mod</label>
+                    <label class="label2" data-i18n="Total">Total</label>
                 </div>
                 <div class="grid8b">
-                    <button name="roll_Awareness" type="roll" id="subitem"
+                    <button name="roll_Awareness" type="roll" id="subitem" data-i18n="Awareness"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Awareness**}} {{dosdof=[[(((  ([[(@{awareness}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
-                        <label>Awareness</label>
+                         <label>Awareness</label>
                     </button>
-                    <span id="gridspan" title="Awareness encompasses the characters’s subconscious ability to&#10;react to things his conscious mind may not perceive. He can use this Skill&#10;to notice threats, such as ambushes, traps, or cleverly&#10;hidden objects—or slight changes in the environment.&#10;&#10;When using Awareness against an opponent, the test is always Opposed.&#10;This use includes noticing ambushes, spotting traps,&#10;and other things involving another’s actions.&#10;&#10;-Skill Use: Free Action made in reaction to something.&#10;-Category: Exploration.">(Per) &#128712;</span>
+                    <span id="gridspan" data-i18n-title="AwarenessDescription" data-i18n="Perception-abbP" title="Awareness encompasses the characters’s subconscious ability to&#10;react to things his conscious mind may not perceive. He can use this Skill&#10;to notice threats, such as ambushes, traps, or cleverly&#10;hidden objects—or slight changes in the environment.&#10;&#10;When using Awareness against an opponent, the test is always Opposed.&#10;This use includes noticing ambushes, spotting traps,&#10;and other things involving another’s actions.&#10;&#10;-Skill Use: Free Action made in reaction to something.&#10;-Category: Exploration.">(Per) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_awareness1" type="checkbox" value="0.5" checked="checked" />
                     </div>
@@ -330,11 +331,11 @@
                     <input id="subitem" name="attr_awareness" type="text" disabled value="(floor((0.5+@{awareness1})*@{perception})+@{awareness2}+@{awareness3}+@{awarenessTalentBonus}+@{awarenessOtherBonus})" />
                 </div>
                 <div class="grid8b">
-                    <button name="roll_Carouse" type="roll" id="subitem"
+                    <button name="roll_Carouse" type="roll" id="subitem"  data-i18n="Carouse" 
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Carouse**}} {{dosdof=[[(((  ([[(@{carouse}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Carouse</label>
                     </button>
-                    <span id="gridspan" title="The Carouse Skill is used to resist the effects of alcohol and narcotics.&#10;The character makes a Skill Test whenever he suffers the effects&#10;of alcohol or similar intoxicants.&#10;&#10;Each time he would otherwise suffer from the effects of an&#10;intoxicant, make a Carouse Test. Failure indicates he has gained&#10;a level of Fatigue or suffers the side effects of the substance.&#10;Should he lose conscious, the character will remain passed out for&#10;a number of hours equal to 1d10 minus his Toughness Bonus (minimum 1 hour).&#10;&#10;-Skill Use: Free Action taken whenever the character imbibes.">(T) &#128712;</span>
+                    <span id="gridspan" data-i18n="Toughness-abbrP" data-i18n-title="CarouseDescription" title="The Carouse Skill is used to resist the effects of alcohol and narcotics.&#10;The character makes a Skill Test whenever he suffers the effects&#10;of alcohol or similar intoxicants.&#10;&#10;Each time he would otherwise suffer from the effects of an&#10;intoxicant, make a Carouse Test. Failure indicates he has gained&#10;a level of Fatigue or suffers the side effects of the substance.&#10;Should he lose conscious, the character will remain passed out for&#10;a number of hours equal to 1d10 minus his Toughness Bonus (minimum 1 hour).&#10;&#10;-Skill Use: Free Action taken whenever the character imbibes.">(T) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_carouse1" type="checkbox" value="0.5" />
                     </div>
@@ -349,11 +350,11 @@
                     <input id="subitem" name="attr_carouse" type="text" disabled value="(floor((0.5+@{carouse1})*@{toughness})+@{carouse2}+@{carouse3}+@{carouseTalentBonus}+@{carouseOtherBonus})" />
                 </div>
                 <div class="grid8b">
-                    <button name="roll_Charm" type="roll" id="subitem"
+                    <button name="roll_Charm" type="roll" id="subitem"  data-i18n="Charm" 
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Charm**}} {{dosdof=[[(((  ([[(@{charm}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Charm</label>
                     </button>
-                    <span id="gridspan" title="The character can use the Charm Skill to improve the disposition&#10;of others towards him, making a Charm Test whenever he&#10;wishes to change the minds of an individual or small group.&#10;He need not make a Charm Test each time he speaks with others&#10;in a pleasant manner, but only when he wishes to change their&#10;opinion, disposition, or convince them to do something.&#10;&#10;All Charm Tests are Opposed by Willpower and can affect&#10;a number of targets equal to the character’s Fellowship Bonus.&#10;His targets must be able to see and hear clearly,&#10;and share a common language.&#10;&#10;-Skill Use: 1 minute.&#10;&#10;-Special Use: Inspire&#10;Those in positions of authority can use Charm to inspire a group.&#10;Success provides a +10 bonus to the next Skill Test of the motivated group.&#10;Battle-Brother might inspire lesser Imperial troopers to fight harder.&#10;&#10;-Category: Interaction.">(Fel) &#128712;</span>
+                    <span id="gridspan" data-i18n="Fellowship-abbrP" data-i18n-title="CharmDescription" title="The character can use the Charm Skill to improve the disposition&#10;of others towards him, making a Charm Test whenever he&#10;wishes to change the minds of an individual or small group.&#10;He need not make a Charm Test each time he speaks with others&#10;in a pleasant manner, but only when he wishes to change their&#10;opinion, disposition, or convince them to do something.&#10;&#10;All Charm Tests are Opposed by Willpower and can affect&#10;a number of targets equal to the character’s Fellowship Bonus.&#10;His targets must be able to see and hear clearly,&#10;and share a common language.&#10;&#10;-Skill Use: 1 minute.&#10;&#10;-Special Use: Inspire&#10;Those in positions of authority can use Charm to inspire a group.&#10;Success provides a +10 bonus to the next Skill Test of the motivated group.&#10;Battle-Brother might inspire lesser Imperial troopers to fight harder.&#10;&#10;-Category: Interaction.">(Fel) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_charm1" type="checkbox" value="0.5" />
                     </div>
@@ -368,11 +369,11 @@
                     <input id="subitem" name="attr_charm" type="text" disabled value="(floor((0.5+@{charm1})*@{fellowship})+@{charm2}+@{charm3}+@{charmTalentBonus}+@{charmOtherBonus})" />
                 </div>
                 <div class="grid8b">
-                    <button name="roll_Climb" type="roll" id="subitem"
+                    <button name="roll_Climb" type="roll" id="subitem" data-i18n="Climb"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Climb**}} {{dosdof=[[(((  ([[(@{climb}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Climb</label>
                     </button>
-                    <span id="gridspan" title="With the Climb skill the character can ascend or descend ropes,&#10;pipes, and both natural and man-made walls.&#10;The condition of the surface or item and the environmental&#10;conditions can impose additional bonuses or penalties.&#10;A successful Test allows the character to ascend or descend&#10;at one-half his half move rate.&#10;&#10;-Skill Use: Half Action.&#10;-Category: Movement.">(S) &#128712;</span>
+                    <span id="gridspan" data-i18n="Strength-abbrP" data-i18n-title="ClimbDescription" title="With the Climb skill the character can ascend or descend ropes,&#10;pipes, and both natural and man-made walls.&#10;The condition of the surface or item and the environmental&#10;conditions can impose additional bonuses or penalties.&#10;A successful Test allows the character to ascend or descend&#10;at one-half his half move rate.&#10;&#10;-Skill Use: Half Action.&#10;-Category: Movement.">(S) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_climb1" type="checkbox" value="0.5" checked="checked" />
                     </div>
@@ -387,11 +388,11 @@
                     <input id="subitem" name="attr_climb" type="text" disabled value="(floor((0.5+@{climb1})*@{strength})+@{climb2}+@{climb3}+@{climbTalentBonus}+@{climbOtherBonus})" />
                 </div>
                 <div class="grid8b">
-                    <button name="roll_Command" type="roll" id="subitem"
+                    <button name="roll_Command" type="roll" id="subitem" data-i18n="Command" 
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Command**}} {{dosdof=[[(((  ([[(@{command}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Command</label>
                     </button>
-                    <span id="gridspan" title="The character utilizes the Command skill to both direct those under&#10;his authority and establish actions for groups to execute on command.&#10;This skill is only effective upon those under the character’s authority.&#10;&#10;A successful Command Test indicates that those whom he directs&#10;follow his instructions in a timely manner. Failure on the Skill&#10;Test when used on an individual, means that he ignores the orders.&#10;Additional Degrees of Failure indicate that the individual reject&#10;or intentionally contradicts the given commands.&#10;&#10;For directing groups, Degrees of Success or Failure will increase&#10;or decrease the time necessary to execute the orders, with 3 or more&#10;Degrees of Failure subjecting them to confused inaction.&#10;&#10;A Command Test can affect a number of targets equal to the&#10;character’s Fellowship Bonus. They must be able to see and hear him,&#10;though this could be done remotely, and use speak a common language.&#10;&#10;-Skill Use: Half Action for simple commands, Full Action for more involved direction.&#10;&#10;-Category: Interaction.">(Fel) &#128712;</span>
+                    <span id="gridspan" data-i18n="Fellowship-abbrP" data-i18n-title="CommandDescription"  title="The character utilizes the Command skill to both direct those under&#10;his authority and establish actions for groups to execute on command.&#10;This skill is only effective upon those under the character’s authority.&#10;&#10;A successful Command Test indicates that those whom he directs&#10;follow his instructions in a timely manner. Failure on the Skill&#10;Test when used on an individual, means that he ignores the orders.&#10;Additional Degrees of Failure indicate that the individual reject&#10;or intentionally contradicts the given commands.&#10;&#10;For directing groups, Degrees of Success or Failure will increase&#10;or decrease the time necessary to execute the orders, with 3 or more&#10;Degrees of Failure subjecting them to confused inaction.&#10;&#10;A Command Test can affect a number of targets equal to the&#10;character’s Fellowship Bonus. They must be able to see and hear him,&#10;though this could be done remotely, and use speak a common language.&#10;&#10;-Skill Use: Half Action for simple commands, Full Action for more involved direction.&#10;&#10;-Category: Interaction.">(Fel) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_command1" type="checkbox" value="0.5" />
                     </div>
@@ -406,11 +407,11 @@
                     <input id="subitem" name="attr_command" type="text" disabled value="(floor((0.5+@{command1})*@{fellowship})+@{command2}+@{command3}+@{commandTalentBonus}+@{commandOtherBonus})" />
                 </div>
                 <div class="grid8b">
-                    <button name="roll_Concealment" type="roll" id="subitem"
+                    <button name="roll_Concealment" type="roll" id="subitem" data-i18n="Concealment"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Concealment**}} {{dosdof=[[(((  ([[(@{concealment}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Concealment</label>
                     </button>
-                    <span id="gridspan" title="The Concealment Skill is used to hide things, from small&#10;objects to vehicles to starships, or objects on the character’s person.&#10;Use of the Skill requires an appropriate environment&#10;to mask the item in question: buildings and trees for a small&#10;shuttle or an asteroid field and space anomaly for a starship.&#10;&#10;Concealment is always an Opposed Test, pitting the character’s&#10;Concealment against his opponent’s Awareness or Scrutiny.&#10;If the character or the object being hidden remains&#10;perfectly still, he gains a +10 bonus to the Skill Test.&#10;&#10;-Skill Use: Half Action.">(Ag) &#128712;</span>
+                    <span id="gridspan" data-i18n="Agility-abbrP" data-i18n-title="ConcealmetDescription" title="The Concealment Skill is used to hide things, from small&#10;objects to vehicles to starships, or objects on the character’s person.&#10;Use of the Skill requires an appropriate environment&#10;to mask the item in question: buildings and trees for a small&#10;shuttle or an asteroid field and space anomaly for a starship.&#10;&#10;Concealment is always an Opposed Test, pitting the character’s&#10;Concealment against his opponent’s Awareness or Scrutiny.&#10;If the character or the object being hidden remains&#10;perfectly still, he gains a +10 bonus to the Skill Test.&#10;&#10;-Skill Use: Half Action.">(Ag) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_concealment1" type="checkbox" value="0.5" checked="checked" />
                     </div>
@@ -425,11 +426,11 @@
                     <input id="subitem" name="attr_concealment" type="text" disabled value="(floor((0.5+@{concealment1})*@{agility})+@{concealment2}+@{concealment3}+@{concealmentTalentBonus}+@{concealmentOtherBonus})" />
                 </div>
                 <div class="grid8b">
-                    <button name="roll_Contortionist" type="roll" id="subitem"
+                    <button name="roll_Contortionist" type="roll" id="subitem" data-i18n="Contortionist"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Contortionist**}} {{dosdof=[[(((  ([[(@{contortionist}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Contortionist</label>
                     </button>
-                    <span id="gridspan" title="Characters with Contortionist Skill can use their innate flexibility to allow them to:&#10;&#10;-Escape Bonds:&#10;The character can Test to slip free of bonds. This is an Opposed Test,&#10;against his opponent’s Intelligence Characteristic. The quality of the bonds and time&#10;to employ them will affect the difficulty of the Test. This requires 1 min.&#10;with each Degree of Success reducing this time by 10 sec.&#10;&#10;-Escape Grapple:&#10;The character may escape a grapple by making an Opposed Test against&#10;the grappler’s Strength Characteristic.&#10;Success frees the character. Failure means he remains grappled.&#10;&#10;-Squeeze Through:&#10;The character can Test to squeeze through a tight space or to cram himself into&#10;a space too small to fit a human body. 4 or more Degrees of Failure mean&#10;he has become stuck until he succeeds in another Contortionist Test or&#10;someone else pulls him free. This takes one minute, with each&#10;Degree of Success reducing this time by 10 sec.&#10;&#10;-Skill Use: Full Action unless otherwise noted.&#10;-Category: Movement, Combat.">(Ag) &#128712;</span>
+                    <span id="gridspan" data-i18n="Agility-abbrP" data-i18n-title="ContortionistDescription" title="Characters with Contortionist Skill can use their innate flexibility to allow them to:&#10;&#10;-Escape Bonds:&#10;The character can Test to slip free of bonds. This is an Opposed Test,&#10;against his opponent’s Intelligence Characteristic. The quality of the bonds and time&#10;to employ them will affect the difficulty of the Test. This requires 1 min.&#10;with each Degree of Success reducing this time by 10 sec.&#10;&#10;-Escape Grapple:&#10;The character may escape a grapple by making an Opposed Test against&#10;the grappler’s Strength Characteristic.&#10;Success frees the character. Failure means he remains grappled.&#10;&#10;-Squeeze Through:&#10;The character can Test to squeeze through a tight space or to cram himself into&#10;a space too small to fit a human body. 4 or more Degrees of Failure mean&#10;he has become stuck until he succeeds in another Contortionist Test or&#10;someone else pulls him free. This takes one minute, with each&#10;Degree of Success reducing this time by 10 sec.&#10;&#10;-Skill Use: Full Action unless otherwise noted.&#10;-Category: Movement, Combat.">(Ag) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_contortionist1" type="checkbox" value="0.5" />
                     </div>
@@ -444,11 +445,11 @@
                     <input id="subitem" name="attr_contortionist" type="text" disabled value="(floor((0.5+@{contortionist1})*@{agility})+@{contortionist2}+@{contortionist3}+@{contortionistTalentBonus}+@{contortionistOtherBonus})" />
                 </div>
                 <div class="grid8b">
-                    <button name="roll_Deceive" type="roll" id="subitem"
+                    <button name="roll_Deceive" type="roll" id="subitem" data-i18n="Deceive"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Deceive**}} {{dosdof=[[(((  ([[(@{deceive}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Deceive</label>
                     </button>
-                    <span id="gridspan" title="The Deceive skill enables the character to mislead others as&#10;to his true intent. Any time he tells a lie, reveal only part&#10;of the truth or spin information to his advantage with the&#10;intent to mislead someone, the character must make a Deceive Test.&#10;He need not make a Deceive Test for every lie, but only&#10;when that deception would change someone’s mind, opinion,&#10;or actions. Deceive is always an Opposed Test, using your&#10;Deceive Skill against the opponent’s Scrutiny.&#10;&#10;A Deceive Test affects a number of targets equal to the&#10;character’s Fellowship Bonus.&#10;They must also speak a common language.&#10;&#10;-Skill Use: 1 minute, or more for complex deceptions.&#10;&#10;-Category: Interaction.">(Fel) &#128712;</span>
+                    <span id="gridspan" data-i18n="Fellowship-abbrP" data-i18n-title="DeceiveDescription" title="The Deceive skill enables the character to mislead others as&#10;to his true intent. Any time he tells a lie, reveal only part&#10;of the truth or spin information to his advantage with the&#10;intent to mislead someone, the character must make a Deceive Test.&#10;He need not make a Deceive Test for every lie, but only&#10;when that deception would change someone’s mind, opinion,&#10;or actions. Deceive is always an Opposed Test, using your&#10;Deceive Skill against the opponent’s Scrutiny.&#10;&#10;A Deceive Test affects a number of targets equal to the&#10;character’s Fellowship Bonus.&#10;They must also speak a common language.&#10;&#10;-Skill Use: 1 minute, or more for complex deceptions.&#10;&#10;-Category: Interaction.">(Fel) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_deceive1" type="checkbox" value="0.5" />
                     </div>
@@ -463,11 +464,11 @@
                     <input id="subitem" name="attr_deceive" type="text" disabled value="(floor((0.5+@{deceive1})*@{fellowship})+@{deceive2}+@{deceive3}+@{deceiveTalentBonus}+@{deceiveOtherBonus})" />
                 </div>
                 <div class="grid8b">
-                    <button name="roll_Dodge" type="roll" id="subitem"
+                    <button name="roll_Dodge" type="roll" id="subitem" data-i18n="Dodge" 
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Dodge**}} {{dosdof=[[(((  ([[(@{dodge}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Dodge</label>
                     </button>
-                    <span id="gridspan" title="Use the Dodge skill as a Reaction to nullify a successful hand-to-hand or ranged attack.&#10;&#10;After a character is hit, but before Damage is rolled,&#10;the character can make a Dodge Test. A character must be aware of the attack in order&#10;to make the test. If succeessful, the character dogges at the last moment and&#10;the attack is considered to have missed (No Damage).&#10;If he fails, the attack connects and deals Damage normally.&#10;Dodge can be used to avoid both melee and ranged attacks.&#10;&#10;When Dodging an area effect weapon (such as flamers), a successful Dodge&#10;moves the character to the edge of the area of effect,&#10;as long as it is no further away than the character’s Agility Bonus in metres.&#10;If the character would need to move further than this to avoid the attack then&#10;the Dodge Test automatically fails.&#10;&#10;When Dodging Fully-Auto or Semi-Auto Bursts, each degree of success on the&#10;Dodge Test negates one additional hit.&#10;&#10;-Skill Use: Reaction.&#10;-Category: Combat, Movement, Reaction.">(Ag) &#128712;</span>
+                    <span id="gridspan" data-i18n="Agility-abbrP" data-i18n-title="DodgeDescription" title="Use the Dodge skill as a Reaction to nullify a successful hand-to-hand or ranged attack.&#10;&#10;After a character is hit, but before Damage is rolled,&#10;the character can make a Dodge Test. A character must be aware of the attack in order&#10;to make the test. If succeessful, the character dogges at the last moment and&#10;the attack is considered to have missed (No Damage).&#10;If he fails, the attack connects and deals Damage normally.&#10;Dodge can be used to avoid both melee and ranged attacks.&#10;&#10;When Dodging an area effect weapon (such as flamers), a successful Dodge&#10;moves the character to the edge of the area of effect,&#10;as long as it is no further away than the character’s Agility Bonus in metres.&#10;If the character would need to move further than this to avoid the attack then&#10;the Dodge Test automatically fails.&#10;&#10;When Dodging Fully-Auto or Semi-Auto Bursts, each degree of success on the&#10;Dodge Test negates one additional hit.&#10;&#10;-Skill Use: Reaction.&#10;-Category: Combat, Movement, Reaction.">(Ag) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_dodge1" type="checkbox" value="0.5" checked="checked" />
                     </div>
@@ -482,11 +483,11 @@
                     <input id="subitem" name="attr_dodge" type="text" disabled value="(floor((0.5+@{dodge1})*@{agility})+@{dodge2}+@{dodge3}+@{dodgeTalentBonus}+@{dodgeOtherBonus})" />
                 </div>
                 <div class="grid8b">
-                    <button name="roll_Evaluate" type="roll" id="subitem"
+                    <button name="roll_Evaluate" type="roll" id="subitem" data-i18n="Evaluate" 
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Evaluate**}} {{dosdof=[[(((  ([[(@{evaluate}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Evaluate</label>
                     </button>
-                    <span id="gridspan" title="Use Evaluate to determine the approximate value, strength or manufacture&#10;of items or objects. Success reveals information such as its value, craftsmanship, integrity or model.&#10;Degrees of Success give additional information about the objects.&#10;Failure gives false information about the object, increasing with each Degree of Failure&#10;&#10;The Test should be adjusted based on access to it, and any Lore or Trade Skills related.&#10;Using Evaluate on large or numerous items requires an Extended Test,&#10;though the character can appraise single items in about a minute.&#10;&#10;-Skill Use: 1 minute or more.&#10;&#10;-Special Use: Weakpoints&#10;When making an attack against a heavily armoured stationary target such as a bunker or&#10;pillbox, a Success adds an additional +4 Pen&#10;for his next attack against the target. Each Degree of Success adds +4 Pen each. This is a Full Action.&#10;-Special Use: Solid Cover&#10;When in cover, Success adds +4 AP to the cover&#10;with each Degree of Success adding +4 AP each. This is Half Action.&#10;&#10;-Category: Investigation.">(Int) &#128712;</span>
+                    <span id="gridspan" data-i18n="Intelligence-abbrP" data-i18n-title="EvaluateDescription" title="Use Evaluate to determine the approximate value, strength or manufacture&#10;of items or objects. Success reveals information such as its value, craftsmanship, integrity or model.&#10;Degrees of Success give additional information about the objects.&#10;Failure gives false information about the object, increasing with each Degree of Failure&#10;&#10;The Test should be adjusted based on access to it, and any Lore or Trade Skills related.&#10;Using Evaluate on large or numerous items requires an Extended Test,&#10;though the character can appraise single items in about a minute.&#10;&#10;-Skill Use: 1 minute or more.&#10;&#10;-Special Use: Weakpoints&#10;When making an attack against a heavily armoured stationary target such as a bunker or&#10;pillbox, a Success adds an additional +4 Pen&#10;for his next attack against the target. Each Degree of Success adds +4 Pen each. This is a Full Action.&#10;-Special Use: Solid Cover&#10;When in cover, Success adds +4 AP to the cover&#10;with each Degree of Success adding +4 AP each. This is Half Action.&#10;&#10;-Category: Investigation.">(Int) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_evaluate1" type="checkbox" value="0.5" />
                     </div>
@@ -501,11 +502,11 @@
                     <input id="subitem" name="attr_evaluate" type="text" disabled value="(floor((0.5+@{evaluate1})*@{intelligence})+@{evaluate2}+@{evaluate3}+@{evaluateTalentBonus}+@{evaluateOtherBonus})" />
                 </div>
                 <div class="grid8b">
-                    <button name="roll_Gamble" type="roll" id="subitem"
+                    <button name="roll_Gamble" type="roll" id="subitem" data-i18n="Gamble"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Gamble**}} {{dosdof=[[(((  ([[(@{gamble}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Gamble</label>
                     </button>
-                    <span id="gridspan" title="The character uses Gamble when participating in games of chance.&#10;Each participant wagers an amount, though these are&#10;typically the same, and makes an Opposed Test with the&#10;Gamble Skill. The player with the most Degrees of Success&#10;or fewest Degrees of Failure wins the pot. The character may&#10;choose to lose against any player with a worse result as part&#10;of a Deceive attempt.&#10;&#10;Those with both Skills may use Sleight of Hand instead&#10;of Gamble to hide cards or alter dice rolls. Success gives the&#10;character a +20 bonus to his tests, but four or more Degrees&#10;of Failure indicates he has been caught in the act.&#10;&#10;-Skill Use: Full Action for an entire day of gaming.">(Int) &#128712;</span>
+                    <span id="gridspan" data-i18n="Intelligence-abbrP" data-i18n-title="GambleDescription" title="The character uses Gamble when participating in games of chance.&#10;Each participant wagers an amount, though these are&#10;typically the same, and makes an Opposed Test with the&#10;Gamble Skill. The player with the most Degrees of Success&#10;or fewest Degrees of Failure wins the pot. The character may&#10;choose to lose against any player with a worse result as part&#10;of a Deceive attempt.&#10;&#10;Those with both Skills may use Sleight of Hand instead&#10;of Gamble to hide cards or alter dice rolls. Success gives the&#10;character a +20 bonus to his tests, but four or more Degrees&#10;of Failure indicates he has been caught in the act.&#10;&#10;-Skill Use: Full Action for an entire day of gaming.">(Int) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_gamble1" type="checkbox" value="0.5" />
                     </div>
@@ -520,11 +521,11 @@
                     <input id="subitem" name="attr_gamble" type="text" disabled value="(floor((0.5+@{gamble1})*@{intelligence})+@{gamble2}+@{gamble3}+@{gambleTalentBonus}+@{gambleOtherBonus})" />
                 </div>
                 <div class="grid8b">
-                    <button name="roll_Inquiry" type="roll" id="subitem"
+                    <button name="roll_Inquiry" type="roll" id="subitem" data-i18n="Inquiry"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Inquiry**}} {{dosdof=[[(((  ([[(@{inquiry}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Inquiry</label>
                     </button>
-                    <span id="gridspan" title="The character can use Inquiry to gain information by asking&#10;questions, through conversation or simple eavesdropping.&#10;Inquiry allows him to pick up general information about an&#10;area: its news, recent events, and more. Additional Degrees of&#10;Success reveal more detailed or more secretive tidings.&#10;&#10;Inquiry can also be used as an Investigation Skill, allowing&#10;the character to hunt after a particular item of information&#10;from either individuals or resources, such as the chapter’s&#10;librarium. This use is virtually always an Extended Test, with&#10;Difficulty and Duration set by the GM.&#10;&#10;-Skill Use: 1 hour or more.&#10;&#10;-Category: Interaction, Investigation">(Fel) &#128712;</span>
+                    <span id="gridspan" data-i18n="Fellowship-abbrP" data-i18n-title="InquiryDescription" title="The character can use Inquiry to gain information by asking&#10;questions, through conversation or simple eavesdropping.&#10;Inquiry allows him to pick up general information about an&#10;area: its news, recent events, and more. Additional Degrees of&#10;Success reveal more detailed or more secretive tidings.&#10;&#10;Inquiry can also be used as an Investigation Skill, allowing&#10;the character to hunt after a particular item of information&#10;from either individuals or resources, such as the chapter’s&#10;librarium. This use is virtually always an Extended Test, with&#10;Difficulty and Duration set by the GM.&#10;&#10;-Skill Use: 1 hour or more.&#10;&#10;-Category: Interaction, Investigation">(Fel) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_inquiry1" type="checkbox" value="0.5" />
                     </div>
@@ -539,16 +540,16 @@
                     <input id="subitem" name="attr_inquiry" type="text" disabled value="(floor((0.5+@{inquiry1})*@{fellowship})+@{inquiry2}+@{inquiry3}+@{inquiryTalentBonus}+@{inquiryOtherBonus})" />
                 </div>
                 <div class="gridinputbasic9">
-                    <button name="roll_Intimidate" type="roll" id="subitem"
+                    <button name="roll_Intimidate" type="roll" id="subitem" data-i18n="Intimidate"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Intimidate**}} {{dosdof=[[(((  ([[(@{intimidate}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Intimidate</label>
                     </button>
                     <select name="attr_intimidate" id="subitem2">
-                        <option value="(floor((0.5+@{intimidate1})*@{strength})+@{intimidate2}+@{intimidate3}+@{intimidateTalentBonus}+@{intimidateOtherBonus})">S</option>
-                        <option value="(floor((0.5+@{intimidate1})*@{intelligence})+@{intimidate2}+@{intimidate3}+@{intimidateTalentBonus}+@{intimidateOtherBonus})">Int</option>
-                        <option value="(floor((0.5+@{intimidate1})*@{fellowship})+@{intimidate2}+@{intimidate3}+@{intimidateTalentBonus}+@{intimidateOtherBonus})">Fel</option>
+                        <option data-i18n="Strength-abbrP" value="(floor((0.5+@{intimidate1})*@{strength})+@{intimidate2}+@{intimidate3}+@{intimidateTalentBonus}+@{intimidateOtherBonus})">S</option>
+                        <option data-i18n="Intelligence-abbrP" value="(floor((0.5+@{intimidate1})*@{intelligence})+@{intimidate2}+@{intimidate3}+@{intimidateTalentBonus}+@{intimidateOtherBonus})">Int</option>
+                        <option data-i18n="Fellowship-abbrP" value="(floor((0.5+@{intimidate1})*@{fellowship})+@{intimidate2}+@{intimidate3}+@{intimidateTalentBonus}+@{intimidateOtherBonus})">Fel</option>
                     </select>
-                    <span id="gridspansp" title="The character uses Intimidate to pressure an individual to give&#10;in to his demands. The character does not make a Test&#10;every time he makes a threat, but only when it involves coercion.&#10;Though Intimidate lists Strength as its associated&#10;characteristic, the character may substitute either Intelligence&#10;or Fellowship if the threat involves more subtle methods than&#10;brute force, such as blackmail or humiliation.&#10;&#10;An Intimidate Test affects a number of targets equal to&#10;the character’s Strength, Intelligence, or Fellowship Bonus.&#10;The target must be able to see/hear him clearly, either in&#10;person or via pict-rec./vox-caster, and speak a common language.&#10;&#10;-Skill Use: Full Action.&#10;&#10;-Special Use: War Cry&#10;As part of a Charge Action the character makes an Intimidate Test&#10;based on Strength, opposed by the target’s Willpower.&#10;If successful, the target suffers –10 to all Parry and Dodge tests&#10;against the charging character. Creatures immune to Fear and other&#10;mind effecting psychology are unaffected.&#10;&#10;-Category: Interaction.">&#128712;</span>
+                    <span id="gridspansp" data-i18n-title="IntimidateDescription" title="The character uses Intimidate to pressure an individual to give&#10;in to his demands. The character does not make a Test&#10;every time he makes a threat, but only when it involves coercion.&#10;Though Intimidate lists Strength as its associated&#10;characteristic, the character may substitute either Intelligence&#10;or Fellowship if the threat involves more subtle methods than&#10;brute force, such as blackmail or humiliation.&#10;&#10;An Intimidate Test affects a number of targets equal to&#10;the character’s Strength, Intelligence, or Fellowship Bonus.&#10;The target must be able to see/hear him clearly, either in&#10;person or via pict-rec./vox-caster, and speak a common language.&#10;&#10;-Skill Use: Full Action.&#10;&#10;-Special Use: War Cry&#10;As part of a Charge Action the character makes an Intimidate Test&#10;based on Strength, opposed by the target’s Willpower.&#10;If successful, the target suffers –10 to all Parry and Dodge tests&#10;against the charging character. Creatures immune to Fear and other&#10;mind effecting psychology are unaffected.&#10;&#10;-Category: Interaction.">&#128712;</span>
                     <div id="cbitem">
                         <input name="attr_intimidate1" type="checkbox" value="0.5" checked="checked" />
                     </div>
@@ -563,11 +564,11 @@
                     <input id="subitem" name="attr_intimidateDisplay" type="text" disabled value="@{intimidate}" />
                 </div>
                 <div class="grid8b">
-                    <button name="roll_Logic" type="roll" id="subitem"
+                    <button name="roll_Logic" type="roll" id="subitem" data-i18n="Logic"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Logic**}} {{dosdof=[[(((  ([[(@{logic}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Logic</label>
                     </button>
-                    <span id="gridspan" title="The character uses Logic to solve problems, decipher puzzles,&#10;and deal with other situations involving demonstration and&#10;inference. A Logic Test might infer the missing symbol in&#10;a series or to solve a particularly troublesome mathematical&#10;equation. He can also use the Skill to prepare a reasoned&#10;argument for debate or philosophical exchange.&#10;The preparations of complex reasoning or complicated&#10;problems are Extended Tests.&#10;&#10;-Skill Use: 1 minute, or longer for particularly complex problems.&#10;-Category: Investigation.">(Int) &#128712;</span>
+                    <span id="gridspan" data-i18n="Intelligence-abbrP" data-i18n-title="LogicDescription" title="The character uses Logic to solve problems, decipher puzzles,&#10;and deal with other situations involving demonstration and&#10;inference. A Logic Test might infer the missing symbol in&#10;a series or to solve a particularly troublesome mathematical&#10;equation. He can also use the Skill to prepare a reasoned&#10;argument for debate or philosophical exchange.&#10;The preparations of complex reasoning or complicated&#10;problems are Extended Tests.&#10;&#10;-Skill Use: 1 minute, or longer for particularly complex problems.&#10;-Category: Investigation.">(Int) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_logic1" type="checkbox" value="0.5" />
                     </div>
@@ -582,11 +583,11 @@
                     <input id="subitem" name="attr_logic" type="text" disabled value="(floor((0.5+@{logic1})*@{intelligence})+@{logic2}+@{logic3}+@{logicTalentBonus}+@{logicOtherBonus})" />
                 </div>
                 <div class="grid8b">
-                    <button name="roll_Scrutiny" type="roll" id="subitem"
+                    <button name="roll_Scrutiny" type="roll" id="subitem" data-i18n="Scrutiny"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Scrutiny**}} {{dosdof=[[(((  ([[(@{scrutiny}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Scrutiny</label>
                     </button>
-                    <span id="gridspan" title="The Scrutiny Skill helps assess the people or objects the character&#10;encounters. The character uses it to determine an individual’s&#10;truthfulness, his motives and generally appraise his personality&#10;and temperament. It can also be used to examine an object in&#10;detail, noticing small details and characteristics that might pass&#10;unseen in a casual inspection. For starship auspex returns, it&#10;allows determination of a vessel’s mass, velocity, and more.&#10;&#10;Scrutiny is an Opposed Test against the target’s Deceive Skill&#10;when trying to perceive falsehoods or deceptions. However,&#10;Scrutiny does not reveal hidden secrets or a target’s carefully&#10;concealed intent, and should never replace good roleplaying&#10;in an interactive situation. This Skill counters the Opposed&#10;Tests of many manipulative Interaction skills, such as Charm,&#10;Deceive, and Intimidate.&#10;&#10;-Skill Use: Full Action, though special uses may require more time.">(Per) &#128712;</span>
+                    <span id="gridspan" data-i18n="Perception-abbrP" data-i18n-title="ScrutinyDescription" title="The Scrutiny Skill helps assess the people or objects the character&#10;encounters. The character uses it to determine an individual’s&#10;truthfulness, his motives and generally appraise his personality&#10;and temperament. It can also be used to examine an object in&#10;detail, noticing small details and characteristics that might pass&#10;unseen in a casual inspection. For starship auspex returns, it&#10;allows determination of a vessel’s mass, velocity, and more.&#10;&#10;Scrutiny is an Opposed Test against the target’s Deceive Skill&#10;when trying to perceive falsehoods or deceptions. However,&#10;Scrutiny does not reveal hidden secrets or a target’s carefully&#10;concealed intent, and should never replace good roleplaying&#10;in an interactive situation. This Skill counters the Opposed&#10;Tests of many manipulative Interaction skills, such as Charm,&#10;Deceive, and Intimidate.&#10;&#10;-Skill Use: Full Action, though special uses may require more time.">(Per) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_scrutiny1" type="checkbox" value="0.5" />
                     </div>
@@ -601,11 +602,11 @@
                     <input id="subitem" name="attr_scrutiny" type="text" disabled value="(floor((0.5+@{scrutiny1})*@{perception})+@{scrutiny2}+@{scrutiny3}+@{scrutinyTalentBonus}+@{scrutinyOtherBonus})" />
                 </div>
                 <div class="grid8b">
-                    <button name="roll_Search" type="roll" id="subitem"
+                    <button name="roll_Search" type="roll" id="subitem" data-i18n="Search"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Search**}} {{dosdof=[[(((  ([[(@{search}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Search</label>
                     </button>
-                    <span id="gridspan" title="The character uses the Search Skill to discover things that are&#10;physically hidden, from a hidden holdout pistol to a shuttle&#10;code. Search involves active investigation, whereas Awareness&#10;deals with passive or subconscious detection. Each Search Test&#10;covers a small room or area. When an object or individual has&#10;been deliberately hidden, the Search Test is an Opposed Test&#10;against the target’s Concealment.&#10;&#10;-Skill Use: 1 minute.&#10;&#10;-Special Use: Inspection&#10;The Search skill can also be used to find hidden stores,&#10;contraband, stowaways, and even evidence of sabotage on&#10;vehicles and starships. Depending on the size of the vehicle,&#10;the GM may designate this as an Extended Test with an&#10;appropriate Duration.&#10;&#10;-Category: Exploration.">(Per) &#128712;</span>
+                    <span id="gridspan" data-i18n="Perception-abbrP" data-i18n-title="SearchDescription" title="The character uses the Search Skill to discover things that are&#10;physically hidden, from a hidden holdout pistol to a shuttle&#10;code. Search involves active investigation, whereas Awareness&#10;deals with passive or subconscious detection. Each Search Test&#10;covers a small room or area. When an object or individual has&#10;been deliberately hidden, the Search Test is an Opposed Test&#10;against the target’s Concealment.&#10;&#10;-Skill Use: 1 minute.&#10;&#10;-Special Use: Inspection&#10;The Search skill can also be used to find hidden stores,&#10;contraband, stowaways, and even evidence of sabotage on&#10;vehicles and starships. Depending on the size of the vehicle,&#10;the GM may designate this as an Extended Test with an&#10;appropriate Duration.&#10;&#10;-Category: Exploration.">(Per) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_search1" type="checkbox" value="0.5" />
                     </div>
@@ -620,11 +621,11 @@
                     <input id="subitem" name="attr_search" type="text" disabled value="(floor((0.5+@{search1})*@{perception})+@{search2}+@{search3}+@{searchTalentBonus}+@{searchOtherBonus})" />
                 </div>
                 <div class="grid8b">
-                    <button name="roll_SilentMove" type="roll" id="subitem"
+                    <button name="roll_SilentMove" type="roll" id="subitem" data-i18n="SilentMove" 
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Silent Move**}} {{dosdof=[[(((  ([[(@{silentMove}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Silent Move</label>
                     </button>
-                    <span id="gridspan" title="Use the Silent Move Skill anytime silence and secrecy is&#10;essential in the character’s activities. The GM sets the Difficulty&#10;of the Test depending on the environment, where the echoing&#10;steel halls of a cargo bay yields a greater Difficulty than the&#10;wood-panelled, carpeted environs of the officers’ quarters.&#10;Silent Move Tests are always Opposed Tests against the&#10;opponent’s Awareness or Scrutiny Skill.&#10;&#10;-Skill Use: Free Action as part of Movement.&#10;-Category: Movement.">(Ag) &#128712;</span>
+                    <span id="gridspan" data-i18n="Agility-abbrP" data-i18n-title="SilentMoveDescription" title="Use the Silent Move Skill anytime silence and secrecy is&#10;essential in the character’s activities. The GM sets the Difficulty&#10;of the Test depending on the environment, where the echoing&#10;steel halls of a cargo bay yields a greater Difficulty than the&#10;wood-panelled, carpeted environs of the officers’ quarters.&#10;Silent Move Tests are always Opposed Tests against the&#10;opponent’s Awareness or Scrutiny Skill.&#10;&#10;-Skill Use: Free Action as part of Movement.&#10;-Category: Movement.">(Ag) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_silentMove1" type="checkbox" value="0.5" checked="checked" />
                     </div>
@@ -639,11 +640,11 @@
                     <input id="subitem" name="attr_silentMove" type="text" disabled value="(floor((0.5+@{silentMove1})*@{agility})+@{silentMove2}+@{silentMove3}+@{silentMoveTalentBonus}+@{silentMoveOtherBonus})" />
                 </div>
                 <div class="grid8b">
-                    <button name="roll_Swim" type="roll" id="subitem"
+                    <button name="roll_Swim" type="roll" id="subitem" data-i18n="Swim" 
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Swim**}} {{dosdof=[[(((  ([[(@{swim}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Swim</label>
                     </button>
-                    <span id="gridspan" title="Swim allows the character to swim through various liquid&#10;mediums. Under normal conditions swimming does not&#10;require a Test. More difficult waters, unusual circumstances,&#10;or long distances call for a Skill Test.&#10;&#10;-Skill Use: Full Action.&#10;-Category: Movement.">(S) &#128712;</span>
+                    <span id="gridspan" data-i18n="Agility-abbrP" data-i18n-title="SwimDescription" title="Swim allows the character to swim through various liquid&#10;mediums. Under normal conditions swimming does not&#10;require a Test. More difficult waters, unusual circumstances,&#10;or long distances call for a Skill Test.&#10;&#10;-Skill Use: Full Action.&#10;-Category: Movement.">(S) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_swim1" type="checkbox" value="0.5" />
                     </div>
@@ -662,22 +663,22 @@
         <div class="rightbox">
             <h3>&#128923; Advanced Skills &#128923;</h3>
                 <div class="grid9">
-                    <label class="label1">Roll Test</label>
-                    <label class="label1">Info</label>
-                    <label class="label2">Basic</label>
-                    <label class="label2">Trained</label>
+                    <label class="label1" data-i18n="RollTest">Roll Test</label>
+                    <label class="label1" data-i18n="Info">Info</label>
+                    <label class="label2" data-i18n="Basic">Basic</label>
+                    <label class="label2" data-i18n="Trained">Trained</label>
                     <label class="label2">+10</label>
                     <label class="label2">+20</label>
-                    <label class="label2">Talent</label>
-                    <label class="label2">Mod</label>
-                    <label class="label2">Total</label>
+                    <label class="label2" data-i18n="Talent">Talent</label>
+                    <label class="label2" data-i18n="Mod">Mod</label>
+                    <label class="label2" data-i18n="Total">Total</label>
                 </div>
                 <div class="grid9">
-                    <button name="roll_Acrobatics" type="roll" id="subitem"
+                    <button name="roll_Acrobatics" type="roll" id="subitem" data-i18n="Acrobatics"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Acrobatics**}} {{dosdof=[[(((  ([[(@{acrobatics}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Acrobatics</label>
                     </button>
-                    <span id="gridspan" title="Acrobatics training supplements the character’s natural agility&#10;to perform feats the less athletic would not even consider.&#10;&#10;-Skill Use: Full Action unless otherwise noted.&#10;&#10;-Special Use: When taking the Disengage Action in combat,&#10;the character may make an Acrobatics Test to reduce it to a Half Action.&#10;&#10;-Special Use: An Acrobatics Test may substitute for an Agility Test when&#10;jumping or a Strength Test when leaping.&#10;&#10;-Category: Movement.">(Ag) &#128712;</span>
+                    <span id="gridspan" data-i18n-title="AcrobaticsDescription" data-i18n="Agility-abbrP" title="Acrobatics training supplements the character’s natural agility&#10;to perform feats the less athletic would not even consider.&#10;&#10;-Skill Use: Full Action unless otherwise noted.&#10;&#10;-Special Use: When taking the Disengage Action in combat,&#10;the character may make an Acrobatics Test to reduce it to a Half Action.&#10;&#10;-Special Use: An Acrobatics Test may substitute for an Agility Test when&#10;jumping or a Strength Test when leaping.&#10;&#10;-Category: Movement.">(Ag) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_acrobatics1" type="checkbox" value="0.5" />
                     </div>
@@ -695,11 +696,11 @@
                     <input id="subitem" name="attr_acrobatics" type="text" disabled value="floor((@{acrobatics1}+@{acrobatics2})*@{agility})+@{acrobatics3}+@{acrobatics4}+@{acrobaticsTalentBonus}+@{acrobaticsOtherBonus}" />
                 </div>
                 <div class="grid9">
-                    <button name="roll_Chem-Use" type="roll" id="subitem"
+                    <button name="roll_Chem-Use" type="roll" id="subitem" data-i18n="ChemUse"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Chem-Use**}} {{dosdof=[[(((  ([[(@{chemUse}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Chem-Use</label>
                     </button>
-                    <span id="gridspan" title="The Chem-Use skill allows the character to safely identify, handle&#10;and prepare a variety of chemicals, toxins, poisons, and drugs.&#10;Success in a Chem-Use Test indicates it has been applied correctly&#10;for the desired results.&#10;&#10;Failure indicates the dose was wasted without effect.&#10;When using a medicae injector or narthecium the Skill Test to&#10;administer a drug or antidote is reduced to a Half Action.&#10;&#10;Employing Chem-Use to apply particularly complex combinations&#10;of substances or toxins uses an Extended Test.&#10;&#10;-Skill Use: Full Action.&#10;-Category: Crafting, Investigation.">(Int) &#128712;</span>
+                    <span id="gridspan" data-i18n-title="ChemUseDescription" data-i18n="Intelligence-abbrP" title="The Chem-Use skill allows the character to safely identify, handle&#10;and prepare a variety of chemicals, toxins, poisons, and drugs.&#10;Success in a Chem-Use Test indicates it has been applied correctly&#10;for the desired results.&#10;&#10;Failure indicates the dose was wasted without effect.&#10;When using a medicae injector or narthecium the Skill Test to&#10;administer a drug or antidote is reduced to a Half Action.&#10;&#10;Employing Chem-Use to apply particularly complex combinations&#10;of substances or toxins uses an Extended Test.&#10;&#10;-Skill Use: Full Action.&#10;-Category: Crafting, Investigation.">(Int) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_chemUse1" type="checkbox" value="0.5" />
                     </div>
@@ -717,11 +718,11 @@
                     <input id="subitem" name="attr_chemUse" type="text" disabled value="floor((@{chemUse1}+@{chemUse2})*@{intelligence})+@{chemUse3}+@{chemUse4}+@{chemUseTalentBonus}+@{chemUseOtherBonus}" />
                 </div>
                 <div class="grid9">
-                    <button name="roll_Demolition" type="roll" id="subitem"
+                    <button name="roll_Demolition" type="roll" id="subitem" data-i18n="Demolition"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Demolition**}} {{dosdof=[[(((  ([[(@{demolition}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Demolition</label>
                     </button>
-                    <span id="gridspan" title="The character can use the Demolition Skill for several effects:&#10;-Manufacture Explosives (Extended Test unless otherwise noted):&#10;The Demolition Skill allows the character to make explosive materials from basic components.&#10;&#10;-Place Explosives (Full Action unless otherwise noted):&#10;Success indicates the character has successfully planted the explosive charge.&#10;Failure indicates that the explosives will fail to go off when triggered,&#10;though the character will not know this till the time of activation.&#10;Four or more Degrees of Failure indicates the character has detonated the device on himself!.&#10;&#10;-Defuse Explosives (Full Action unless otherwise noted):&#10;Make an Opposed Test against the Demolition Skill Test of the individual who set the explosives.&#10;Winning the Test indicates that the bomb has been defused.&#10;Simple failure means that the charge has not been disarmed.&#10;Four or more Degrees of Failure indicates the character has set off the device!&#10;&#10;-Category: Crafting.">(Int) &#128712;</span>
+                    <span id="gridspan" data-i18n-title="DemolitionDescription" data-i18n="Intelligence-abbrP" title="The character can use the Demolition Skill for several effects:&#10;-Manufacture Explosives (Extended Test unless otherwise noted):&#10;The Demolition Skill allows the character to make explosive materials from basic components.&#10;&#10;-Place Explosives (Full Action unless otherwise noted):&#10;Success indicates the character has successfully planted the explosive charge.&#10;Failure indicates that the explosives will fail to go off when triggered,&#10;though the character will not know this till the time of activation.&#10;Four or more Degrees of Failure indicates the character has detonated the device on himself!.&#10;&#10;-Defuse Explosives (Full Action unless otherwise noted):&#10;Make an Opposed Test against the Demolition Skill Test of the individual who set the explosives.&#10;Winning the Test indicates that the bomb has been defused.&#10;Simple failure means that the charge has not been disarmed.&#10;Four or more Degrees of Failure indicates the character has set off the device!&#10;&#10;-Category: Crafting.">(Int) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_demolition1" type="checkbox" value="0.5" />
                     </div>
@@ -739,11 +740,11 @@
                     <input id="subitem" name="attr_demolition" type="text" disabled value="floor((@{demolition1}+@{demolition2})*@{intelligence})+@{demolition3}+@{demolition4}+@{demolitionTalentBonus}+@{demolitionOtherBonus}" />
                 </div>
                 <div class="grid9">
-                    <button name="roll_Interrogation" type="roll" id="subitem"
+                    <button name="roll_Interrogation" type="roll" id="subitem"  data-i18n="Interrogation"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Interrogation**}} {{dosdof=[[(((  ([[(@{interrogation}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Interrogation</label>
                     </button>
-                    <span id="gridspan" title="Interrogation allows the character to extract information from an unwilling subject.&#10;Make an Opposed Test, pitting the character’s Interrogation Skill against an opponent’s Willpower.&#10;&#10;If he wins, the character gets one answer, plus one answer for each Degree of Success.&#10;If the opponent wins, the character gets nothing of worth.&#10;Two or more Degrees of Failure inflict 1d10 plus the character’s Willpower Bonus in Damage&#10;to the target, and prevents any further interrogation for 1d5 days.&#10;&#10;If the character suffers four or more Degrees of Failure, he deals 1d10 Damage and his&#10;subject gains a +30 bonus to Willpower Tests made to resist Interrogation at the hands of the character&#10;or his allies. Each Interrogation Test inflicts one level of Fatigue on the target.&#10;&#10;-Skill Use: 1d5 hours.&#10;-Category: Investigation.">(WP) &#128712;</span>
+                    <span id="gridspan" data-i18n-title="InterrogationDescription" data-i18n="Willpower-abbrP" title="Interrogation allows the character to extract information from an unwilling subject.&#10;Make an Opposed Test, pitting the character’s Interrogation Skill against an opponent’s Willpower.&#10;&#10;If he wins, the character gets one answer, plus one answer for each Degree of Success.&#10;If the opponent wins, the character gets nothing of worth.&#10;Two or more Degrees of Failure inflict 1d10 plus the character’s Willpower Bonus in Damage&#10;to the target, and prevents any further interrogation for 1d5 days.&#10;&#10;If the character suffers four or more Degrees of Failure, he deals 1d10 Damage and his&#10;subject gains a +30 bonus to Willpower Tests made to resist Interrogation at the hands of the character&#10;or his allies. Each Interrogation Test inflicts one level of Fatigue on the target.&#10;&#10;-Skill Use: 1d5 hours.&#10;-Category: Investigation.">(WP) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_interrogation1" type="checkbox" value="0.5" />
                     </div>
@@ -761,11 +762,11 @@
                     <input id="subitem" name="attr_interrogation" type="text" disabled value="floor((@{interrogation1}+@{interrogation2})*@{willpower})+@{interrogation3}+@{interrogation4}+@{interrogationTalentBonus}+@{interrogationOtherBonus}" />
                 </div>
                 <div class="grid9">
-                    <button name="roll_Invocation" type="roll" id="subitem"
+                    <button name="roll_Invocation" type="roll" id="subitem"  data-i18n="Invocation"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Invocation**}} {{dosdof=[[(((  ([[(@{invocation}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Invocation</label>
                     </button>
-                    <span id="gridspan" title="For the duration of the round, the character clears his mind of external influence&#10;and focuses his will more intently. A successful test indicates that his mind is ready&#10;to channel the warp more intensely.&#10;&#10;On the next round, the character adds +1 to the final Psy Rating&#10;of any Fettered Power Test.&#10;&#10;Failure indicates that the character’s attempts to focus have backfired,&#10;and he suffers a –1 penalty to the final Psy Rating of a Fettered Power Test.&#10;If this reduces the Psy Rating to zero, the power fails to activate.&#10;&#10;-Skill Use: Full Action.">(WP) &#128712;</span>
+                    <span id="gridspan" data-i18n-title="InvocationDescription" data-i18n="Willpower-abbrP" title="For the duration of the round, the character clears his mind of external influence&#10;and focuses his will more intently. A successful test indicates that his mind is ready&#10;to channel the warp more intensely.&#10;&#10;On the next round, the character adds +1 to the final Psy Rating&#10;of any Fettered Power Test.&#10;&#10;Failure indicates that the character’s attempts to focus have backfired,&#10;and he suffers a –1 penalty to the final Psy Rating of a Fettered Power Test.&#10;If this reduces the Psy Rating to zero, the power fails to activate.&#10;&#10;-Skill Use: Full Action.">(WP) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_invocation1" type="checkbox" value="0.5" />
                     </div>
@@ -783,11 +784,11 @@
                     <input id="subitem" name="attr_invocation" type="text" disabled value="floor((@{invocation1}+@{invocation2})*@{willpower})+@{invocation3}+@{invocation4}+@{invocationTalentBonus}+@{invocationOtherBonus}" />
                 </div>
                 <div class="grid9">
-                    <button name="roll_Literacy" type="roll" id="subitem"
+                    <button name="roll_Literacy" type="roll" id="subitem" data-i18n-label="Litteracy"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Literacy**}} {{dosdof=[[(((  ([[(@{literacy}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Literacy</label>
                     </button>
-                    <span id="gridspan" title="Literacy allows the character to read and write any language he speaks.&#10;Everyday activities do not require Literacy Tests, but&#10;situations involving regional variations, damaged manuscripts,&#10;archaic usage, or colloquial phrases necessitate a Test.&#10;&#10;-Skill Use: 1 minute for 1 page of text, roughly 750 words.">(Int) &#128712;</span>
+                    <span id="gridspan" data-i18n-title="LitteracyDescription" data-i18n="Intelligence-abbrP" title="Literacy allows the character to read and write any language he speaks.&#10;Everyday activities do not require Literacy Tests, but&#10;situations involving regional variations, damaged manuscripts,&#10;archaic usage, or colloquial phrases necessitate a Test.&#10;&#10;-Skill Use: 1 minute for 1 page of text, roughly 750 words.">(Int) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_literacy1" type="checkbox" value="0.5" checked/>
                     </div>
@@ -805,11 +806,11 @@
                     <input id="subitem" name="attr_literacy" type="text" disabled value="floor((@{literacy1}+@{literacy2})*@{intelligence})+@{literacy3}+@{literacy4}+@{literacyTalentBonus}+@{literacyOtherBonus}" />
                 </div>
                 <div class="grid9">
-                    <button name="roll_Medicae" type="roll" id="subitem"
+                    <button name="roll_Medicae" type="roll" id="subitem" data-i18n-label="Medicae"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Medicae**}} {{dosdof=[[(((  ([[(@{medicae}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }} {{desc=?{Special Use|None,**No Special Action**|First Aid,**First Aid**: If successful it restores [[@{intelligenceBonus}]]&#10;(**Int** Bonus) for the lightly wounded.&#10;&#10;[[1]] for the heavily wounded or critical damage.|Extended Care,**Extended Care**: Heal at twice the Normal rate + Degrees of Success|Diagnosis,**Diagnosis**: Success yields the name of the ailment and basic treatments.|Harvest Gene-Seed,**Harvest Gene-Seed**: An Apothecary may extract the gene-seed from a fallen Space Marine (requires narthecium) See **Progenoid** Implant for more info} }}">
                         <label>Medicae</label>
                     </button>
-                    <span id="gridspan" title="The Medicae Skill helps diagnose and treat injuries by suturing wounds,&#10;applying counterseptic, and use of medical devices such as the Narthecium.&#10;&#10;On individual patients Medicae provides First Aid and Extended Care&#10;for short or long term treatment.&#10;&#10;This macro contains all available options.&#10;&#10;Additional rules can be found on page 102 DWCR.">(Int) &#128712;</span>
+                    <span data-i18n-title="MedicaeDescription" data-i18n="Intelligence-abbrP" id="gridspan" title="The Medicae Skill helps diagnose and treat injuries by suturing wounds,&#10;applying counterseptic, and use of medical devices such as the Narthecium.&#10;&#10;On individual patients Medicae provides First Aid and Extended Care&#10;for short or long term treatment.&#10;&#10;This macro contains all available options.&#10;&#10;Additional rules can be found on page 102 DWCR.">(Int) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_medicae1" type="checkbox" value="0.5" />
                     </div>
@@ -827,11 +828,11 @@
                     <input id="subitem" name="attr_medicae" type="text" disabled value="floor((@{medicae1}+@{medicae2})*@{intelligence})+@{medicae3}+@{medicae4}+@{medicaeTalentBonus}+@{medicaeOtherBonus}" />
                 </div>
                 <div class="grid9">
-                    <button name="roll_Psyniscience" type="roll" id="subitem"
+                    <button name="roll_Psyniscience" type="roll" id="subitem" data-i18n-label="Psyniscience"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Psyniscience**}} {{dosdof=[[(((  ([[(@{psyniscience}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Psyniscience</label>
                     </button>
-                    <span id="gridspan" title="The character can use the Skill to detect the presence or absence of daemons&#10;and the use of psychic powers. The Skill also allows detection of psychic phenomena,&#10;disturbances, voids or other areas where the flow of the immaterium&#10;has been unsettled or disrupted.&#10;&#10;*Success: Awareness of immaterium disruption or number of entities present.&#10;*1 DoS: Approximate direction of the phenomena or creatures.&#10;*2 DoS: Rough location of the warp creatures or beings affecting the immaterium.&#10;*3+ DoS: Exact position of the creatures or psykers present.&#10;&#10;-Skill Use: Full Action.&#10;&#10;-Special Use: Extend Senses&#10;On a success, you extend your senses out to a number&#10;of metres equal to your Perception Bonus plus 1d10. &#10;Each degree of success adds another&#10;1d10 to your Perception Bonus.">(Per) &#128712;</span>
+                    <span id="gridspan" data-i18n-title="PsyniscienceDescription" data-i18n="Perception-abbP" title="The character can use the Skill to detect the presence or absence of daemons&#10;and the use of psychic powers. The Skill also allows detection of psychic phenomena,&#10;disturbances, voids or other areas where the flow of the immaterium&#10;has been unsettled or disrupted.&#10;&#10;*Success: Awareness of immaterium disruption or number of entities present.&#10;*1 DoS: Approximate direction of the phenomena or creatures.&#10;*2 DoS: Rough location of the warp creatures or beings affecting the immaterium.&#10;*3+ DoS: Exact position of the creatures or psykers present.&#10;&#10;-Skill Use: Full Action.&#10;&#10;-Special Use: Extend Senses&#10;On a success, you extend your senses out to a number&#10;of metres equal to your Perception Bonus plus 1d10. &#10;Each degree of success adds another&#10;1d10 to your Perception Bonus.">(Per) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_psyniscience1" type="checkbox" value="0.5" />
                     </div>
@@ -849,11 +850,11 @@
                     <input id="subitem" name="attr_psyniscience" type="text" disabled value="floor((@{psyniscience1}+@{psyniscience2})*@{perception})+@{psyniscience3}+@{psyniscience4}+@{psyniscienceTalentBonus}+@{psyniscienceOtherBonus}" />
                 </div>
                 <div class="grid9">
-                    <button name="roll_Security" type="roll" id="subitem"
+                    <button name="roll_Security" type="roll" id="subitem" data-i18n-label="Security"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Security**}} {{dosdof=[[(((  ([[(@{security}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Security</label>
                     </button>
-                    <span id="gridspan" title="Security is used to bypass mechanical locks and other physical security systems.&#10;This differs from many systems that employ codes or cogitators&#10;that are more suited to the Tech-Use Skill.&#10;&#10;Using this Skill without proper tools or equipment is extremely challenging,&#10;and any attempt to bypass a lock or other security system without&#10;using a multikey or other set of appropriate tools suffers from a –20 penalty.&#10;&#10;-Skill Use: 1 minute, reduced by 10 seconds for each Degree of Success.&#10;&#10;-Special Use: Strategic Entry&#10;A Security test can find weak points in the defensive system involved.&#10;Tests made in this manner should test against&#10;Awareness rather than Agility, and requires 1d5 hours.&#10;&#10;-Category: Exploration">(Ag) &#128712;</span>
+                    <span id="gridspan" data-i18n-title="SecurityDescription" data-i18n="Agility-abbP" title="Security is used to bypass mechanical locks and other physical security systems.&#10;This differs from many systems that employ codes or cogitators&#10;that are more suited to the Tech-Use Skill.&#10;&#10;Using this Skill without proper tools or equipment is extremely challenging,&#10;and any attempt to bypass a lock or other security system without&#10;using a multikey or other set of appropriate tools suffers from a –20 penalty.&#10;&#10;-Skill Use: 1 minute, reduced by 10 seconds for each Degree of Success.&#10;&#10;-Special Use: Strategic Entry&#10;A Security test can find weak points in the defensive system involved.&#10;Tests made in this manner should test against&#10;Awareness rather than Agility, and requires 1d5 hours.&#10;&#10;-Category: Exploration">(Ag) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_security1" type="checkbox" value="0.5" />
                     </div>
@@ -871,11 +872,11 @@
                     <input id="subitem" name="attr_security" type="text" disabled value="floor((@{security1}+@{security2})*@{agility})+@{security3}+@{security4}+@{securityTalentBonus}+@{securityOtherBonus}" />
                 </div>
                 <div class="grid9">
-                    <button name="roll_Shadowing" type="roll" id="subitem"
+                    <button name="roll_Shadowing" type="roll" id="subitem" data-i18n-label="Shadowing"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Shadowing**}} {{dosdof=[[(((  ([[(@{shadowing}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Shadowing</label>
                     </button>
-                    <span id="gridspan" title="Shadowing allows the character to follow others on foot&#10;or using vehicles or starships.&#10;&#10;It contrasts with Concealment because it involves movement&#10;and blending into one’s surroundings.&#10;&#10;Shadowing Tests are always Opposed Tests against the opponent’s&#10;Awareness or Scrutiny Skill.&#10;&#10;A single Test is sufficient to follow an opponent unseen for 1 minute.&#10;&#10;-Skill Use: 1 minute.">(Ag) &#128712;</span>
+                    <span id="gridspan" data-i18n-title="ShadowingDescription" data-i18n="Agility-abbP" title="Shadowing allows the character to follow others on foot&#10;or using vehicles or starships.&#10;&#10;It contrasts with Concealment because it involves movement&#10;and blending into one’s surroundings.&#10;&#10;Shadowing Tests are always Opposed Tests against the opponent’s&#10;Awareness or Scrutiny Skill.&#10;&#10;A single Test is sufficient to follow an opponent unseen for 1 minute.&#10;&#10;-Skill Use: 1 minute.">(Ag) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_shadowing1" type="checkbox" value="0.5" />
                     </div>
@@ -893,11 +894,11 @@
                     <input id="subitem" name="attr_shadowing" type="text" disabled value="floor((@{shadowing1}+@{shadowing2})*@{agility})+@{shadowing3}+@{shadowing4}+@{shadowingTalentBonus}+@{shadowingOtherBonus}" />
                 </div>
                 <div class="grid9">
-                    <button name="roll_SleightofHand" type="roll" id="subitem"
+                    <button name="roll_SleightofHand" type="roll" id="subitem" data-i18n-label="SleightOfHand"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Sleight of Hand**}} {{dosdof=[[(((  ([[(@{sleightOfHand}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Sleight of Hand</label>
                     </button>
-                    <span id="gridspan" title="Characters use Sleight of Hand for any task requiring&#10;a combination of deception and dexterity.&#10;&#10;Examples include: palming small objects,&#10;picking pockets, or performing tricks.&#10;The GM sets the Difficulty for the Test according&#10;to the size of the object and the intensity of observation.&#10;&#10;Sleight of Hand is always an Opposed Test against&#10;the opponent’s Awareness or Scrutiny.&#10;The character can use Sleight of Hand instead of Gamble to&#10;employ deception and alter the odds in games of chance.&#10;&#10;Though Sleight of Hand usually requires a Half Action,&#10;the character may make a Test as a Free Action with a –10 penalty.&#10;&#10;-Skill Use: Half Action.">(Ag) &#128712;</span>
+                    <span id="gridspan" data-i18n-title="SleightOfHandDescription" data-i18n="Agility-abbP" title="Characters use Sleight of Hand for any task requiring&#10;a combination of deception and dexterity.&#10;&#10;Examples include: palming small objects,&#10;picking pockets, or performing tricks.&#10;The GM sets the Difficulty for the Test according&#10;to the size of the object and the intensity of observation.&#10;&#10;Sleight of Hand is always an Opposed Test against&#10;the opponent’s Awareness or Scrutiny.&#10;The character can use Sleight of Hand instead of Gamble to&#10;employ deception and alter the odds in games of chance.&#10;&#10;Though Sleight of Hand usually requires a Half Action,&#10;the character may make a Test as a Free Action with a –10 penalty.&#10;&#10;-Skill Use: Half Action.">(Ag) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_sleightOfHand1" type="checkbox" value="0.5" />
                     </div>
@@ -915,11 +916,11 @@
                     <input id="subitem" name="attr_sleightOfHand" type="text" disabled value="floor((@{sleightOfHand1}+@{sleightOfHand2})*@{agility})+@{sleightOfHand3}+@{sleightOfHand4}+@{sleightOfHandTalentBonus}+@{sleightOfHandOtherBonus}" />
                 </div>
                 <div class="grid9">
-                    <button name="roll_Survival" type="roll" id="subitem"
+                    <button name="roll_Survival" type="roll" id="subitem" data-i18n-label="Survival"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Survival**}} {{dosdof=[[(((  ([[(@{survival}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Survival</label>
                     </button>
-                    <span id="gridspan" title="Survival allows the character to endure for prolonged&#10;periods in unusual or alien environments.&#10;&#10;The Difficulty of these Tests depends on the location:&#10;barren deserts provide much greater challenge&#10;than verdant tropical forests.&#10;&#10;This Skill can also apply to man-made environments,&#10;such as artificial worlds, the depths of the Underhive,&#10;or the belly of massive starships.&#10;&#10;-Skill Use: Varies.&#10;-Category: Exploration">(Int) &#128712;</span>
+                    <span id="gridspan" data-i18n-title="SurvivalDescription" data-i18n="Intelligence-abbrP" title="Survival allows the character to endure for prolonged&#10;periods in unusual or alien environments.&#10;&#10;The Difficulty of these Tests depends on the location:&#10;barren deserts provide much greater challenge&#10;than verdant tropical forests.&#10;&#10;This Skill can also apply to man-made environments,&#10;such as artificial worlds, the depths of the Underhive,&#10;or the belly of massive starships.&#10;&#10;-Skill Use: Varies.&#10;-Category: Exploration">(Int) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_survival1" type="checkbox" value="0.5" />
                     </div>
@@ -937,11 +938,11 @@
                     <input id="subitem" name="attr_survival" type="text" disabled value="floor((@{survival1}+@{survival2})*@{intelligence})+@{survival3}+@{survival4}+@{survivalTalentBonus}+@{survivalOtherBonus}" />
                 </div>
                 <div class="grid9">
-                    <button name="roll_Tech-Use" type="roll" id="subitem"
+                    <button name="roll_Tech-Use" type="roll" id="subitem" data-i18n-label="TechUse"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Tech-Use**}} {{dosdof=[[(((  ([[(@{techUse}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Tech-Use</label>
                     </button>
-                    <span id="gridspan" title="Tech-Use allows the character to use or repair complex mechanical items&#10;or fathom the workings of unknown technical artefacts.&#10;The character can also use Tech-Use to repair damaged&#10;or defective items, using an Extended Test.&#10;Tech-Use can be used to direct the actions of Servitors.&#10;&#10;-Skill Use: 1 minute, or more for more complex systems.&#10;&#10;-Special Use: Security Systems&#10;Security covers mechanical security systems, but many systems&#10;may have both physical and electronic components, and certain&#10;examples may be entirely controlled by cogitators and machine spirits.&#10;&#10;-Category: Exploration.">(Int) &#128712;</span>
+                    <span id="gridspan" data-i18n-title="TechUseDescription" data-i18n="Intelligence-abbrP" title="Tech-Use allows the character to use or repair complex mechanical items&#10;or fathom the workings of unknown technical artefacts.&#10;The character can also use Tech-Use to repair damaged&#10;or defective items, using an Extended Test.&#10;Tech-Use can be used to direct the actions of Servitors.&#10;&#10;-Skill Use: 1 minute, or more for more complex systems.&#10;&#10;-Special Use: Security Systems&#10;Security covers mechanical security systems, but many systems&#10;may have both physical and electronic components, and certain&#10;examples may be entirely controlled by cogitators and machine spirits.&#10;&#10;-Category: Exploration.">(Int) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_techUse1" type="checkbox" value="0.5" />
                     </div>
@@ -959,11 +960,11 @@
                     <input id="subitem" name="attr_techUse" type="text" disabled value="floor((@{techUse1}+@{techUse2})*@{intelligence})+@{techUse3}+@{techUse4}+@{techUseTalentBonus}+@{techUseOtherBonus}" />
                 </div>
                 <div class="grid9">
-                    <button name="roll_Tracking" type="roll" id="subitem"
+                    <button name="roll_Tracking" type="roll" id="subitem" data-i18n-label="Tracking"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Tracking**}} {{dosdof=[[(((  ([[(@{tracking}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Tracking</label>
                     </button>
-                    <span id="gridspan" title="The character can follow the signs left by his quarry.&#10;The Difficulty depends on the condition of the traces&#10;and the tracker’s surroundings.&#10;&#10;When following any tracks where the Difficulty&#10;of the Test is more than Challenging (+0)&#10;the tracker’s Movement rate drops to half.&#10;&#10;In the case where an opponent has attempted to Conceal&#10;or erase their tracks, make an Opposed Test&#10;made against the prey’s Concealment.&#10;&#10;-Skill Use: Free Action made as part of Movement.&#10;-Category: Exploration.">(Int) &#128712;</span>
+                    <span id="gridspan" data-i18n-title="TrackingDescription" data-i18n="Intelligence-abbrP" title="The character can follow the signs left by his quarry.&#10;The Difficulty depends on the condition of the traces&#10;and the tracker’s surroundings.&#10;&#10;When following any tracks where the Difficulty&#10;of the Test is more than Challenging (+0)&#10;the tracker’s Movement rate drops to half.&#10;&#10;In the case where an opponent has attempted to Conceal&#10;or erase their tracks, make an Opposed Test&#10;made against the prey’s Concealment.&#10;&#10;-Skill Use: Free Action made as part of Movement.&#10;-Category: Exploration.">(Int) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_tracking1" type="checkbox" value="0.5" checked/>
                     </div>
@@ -981,11 +982,11 @@
                     <input id="subitem" name="attr_tracking" type="text" disabled value="floor((@{tracking1}+@{tracking2})*@{intelligence})+@{tracking3}+@{tracking4}+@{trackingTalentBonus}+@{trackingOtherBonus}" />
                 </div>
                 <div class="grid9">
-                    <button name="roll_Wrangling" type="roll" id="subitem"
+                    <button name="roll_Wrangling" type="roll" id="subitem" data-i18n-label="Wrangling"
                         value="@{gmroll}&{template:custom} {{name=**@{character_name} Test Wrangling**}} {{dosdof=[[(((  ([[(@{wrangling}+?{Modifier|0})]] - [[1d100cs1cf100]]) * 100 % 999 % 100  )))]] **Degrees**}} {{testtarget= $[[0]] }} {{d100= $[[1]] }} {{testresult= }}">
                         <label>Wrangling</label>
                     </button>
-                    <span id="gridspan" title="The character can tame, train, and potentially ride animals&#10;encountered in his travels, from spine-hounds to the noble&#10;warhorse breeds. Both taming and training beasts are&#10;Extended Tests, the Duration of which is determined by the&#10;nature and temper of the creature involved.&#10;&#10;Once an animal has been broken to its master’s will or&#10;at least formed a partnership for particularly strong-willed&#10;beasts—directing it or issuing commands is a Half Action.&#10;&#10;Wild animals, or those trained for hostility and aggression,&#10;can have their Disposition changed by one level for every&#10;2 Degrees of Success, up to a maximum of three levels by&#10;a Full Action use of this Skill.&#10;&#10;Wrangling is of no use against cyber-animals, psy-bonded&#10;animals, or against any creature with true sentience.&#10;&#10;-Skill Use: Variable depending on task and complexity.">(Int) &#128712;</span>
+                    <span id="gridspan" data-i18n-title="WranglinggDescription" data-i18n="Intelligence-abbrP"  title="The character can tame, train, and potentially ride animals&#10;encountered in his travels, from spine-hounds to the noble&#10;warhorse breeds. Both taming and training beasts are&#10;Extended Tests, the Duration of which is determined by the&#10;nature and temper of the creature involved.&#10;&#10;Once an animal has been broken to its master’s will or&#10;at least formed a partnership for particularly strong-willed&#10;beasts—directing it or issuing commands is a Half Action.&#10;&#10;Wild animals, or those trained for hostility and aggression,&#10;can have their Disposition changed by one level for every&#10;2 Degrees of Success, up to a maximum of three levels by&#10;a Full Action use of this Skill.&#10;&#10;Wrangling is of no use against cyber-animals, psy-bonded&#10;animals, or against any creature with true sentience.&#10;&#10;-Skill Use: Variable depending on task and complexity.">(Int) &#128712;</span>
                     <div id="cbitem">
                         <input name="attr_wrangling1" type="checkbox" value="0.5" />
                     </div>
@@ -1013,13 +1014,15 @@
             <div class="quickborder">
                 <div class="grid8">
                     <label class="label1 help" title="Speak Language is used to communicate with others using the same language.&#10;However, communication with those using obscure dialects or cryptic,&#10;complex concepts will require a Test at an appropriate Difficulty&#10;&#10;Skill Groups:&#10;-Eldar&#10;-High Gothic&#10;-Kroot&#10;-Low Gothic&#10;-Ork&#10;-Techna-Lingua&#10;-Tau.&#10;&#10;-Skill Use: Free Action.">Speak Language (Int) &#128712;</label>
-                    <label class="label2">Basic</label>
-                    <label class="label2">Trained</label>
+                    <label class="label1" data-i18n="RollTest">Roll Test</label>
+                    <label class="label1" data-i18n="Info">Info</label>
+                    <label class="label2" data-i18n="Basic">Basic</label>
+                    <label class="label2" data-i18n="Trained">Trained</label>
                     <label class="label2">+10</label>
                     <label class="label2">+20</label>
-                    <label class="label2">Talent</label>
-                    <label class="label2">Mod</label>
-                    <label class="label2">Roll</label>
+                    <label class="label2" data-i18n="Talent">Talent</label>
+                    <label class="label2" data-i18n="Mod">Mod</label>
+                    <label class="label2" data-i18n="Total">Total</label>>
                 </div>
                 <div class="grid8">
                     <input id="subitem" name="attr_1LanguageName" type="text" value="High & Low Gothic" />
@@ -1068,14 +1071,16 @@
             </div>
             <div class="quickborder">
                 <div class="grid8">
-                    <label class="label1 help" title="Scholastic Lore grants the character knowledge of particularly complex or esoteric subject.&#10;A successful Skill Test allows him to recall necessary information or research &#10;a particular subject should appropriate reference material be&#10;readily available. Scholastic Lore grants a depth of knowledge&#10;far beyond that of Common Lore, requiring both experience and study to obtain.&#10;&#10;Success Results:&#10;Success = Reveals basic information known to scholars on the topic.&#10;1 DoS = Reveals uncommon information, known to few dedicated academics.&#10;2 DoS = Reveals obscure information, known to only serious scholars.&#10;3+ DoS = Reveals extremely rare information, known only to true experts in the field.&#10;&#10;Skill Groups:&#10;-Archaic&#10;-Astromancy&#10;-Beasts&#10;-Bureaucracy&#10;-Chymistry&#10;-Codex Astartes&#10;-Cryptology&#10;-Heraldry&#10;-Imperial Creed&#10;-Judgement&#10;-Legend&#10;-Numerology&#10;-Occult&#10;-Philosophy&#10;-Tactica Imperialis&#10;&#10;-Skill Use: Free Action.&#10;&#10;-Category: Investigation.">Scholastic Lore (Int) &#128712;</label>
-                    <label class="label2">Basic</label>
-                    <label class="label2">Trained</label>
+                    <label data-i18n="ScholasticLoreInt" data-i18n-title="ScholasticLoreDescription" class="label1 help" title="Scholastic Lore grants the character knowledge of particularly complex or esoteric subject.&#10;A successful Skill Test allows him to recall necessary information or research &#10;a particular subject should appropriate reference material be&#10;readily available. Scholastic Lore grants a depth of knowledge&#10;far beyond that of Common Lore, requiring both experience and study to obtain.&#10;&#10;Success Results:&#10;Success = Reveals basic information known to scholars on the topic.&#10;1 DoS = Reveals uncommon information, known to few dedicated academics.&#10;2 DoS = Reveals obscure information, known to only serious scholars.&#10;3+ DoS = Reveals extremely rare information, known only to true experts in the field.&#10;&#10;Skill Groups:&#10;-Archaic&#10;-Astromancy&#10;-Beasts&#10;-Bureaucracy&#10;-Chymistry&#10;-Codex Astartes&#10;-Cryptology&#10;-Heraldry&#10;-Imperial Creed&#10;-Judgement&#10;-Legend&#10;-Numerology&#10;-Occult&#10;-Philosophy&#10;-Tactica Imperialis&#10;&#10;-Skill Use: Free Action.&#10;&#10;-Category: Investigation.">Scholastic Lore (Int) &#128712;</label>
+                    <label class="label1" data-i18n="RollTest">Roll Test</label>
+                    <label class="label1" data-i18n="Info">Info</label>
+                    <label class="label2" data-i18n="Basic">Basic</label>
+                    <label class="label2" data-i18n="Trained">Trained</label>
                     <label class="label2">+10</label>
                     <label class="label2">+20</label>
-                    <label class="label2">Talent</label>
-                    <label class="label2">Mod</label>
-                    <label class="label2">Roll</label>
+                    <label class="label2" data-i18n="Talent">Talent</label>
+                    <label class="label2" data-i18n="Mod">Mod</label>
+                    <label class="label2" data-i18n="Total">Total</label>>
                 </div>
                 <fieldset class="repeating_scholasticlore">
                     <div class="grid8">
@@ -1103,14 +1108,16 @@
             </div>
             <div class="quickborder">
                 <div class="grid8">
-                    <label class="label1 help" title="The Drive Skill allows the character to control land-based vehicles.&#10;Normal driving does not require a Skill Test, but one is required&#10;for hazardous conditions, excessive speed, or dangerous manoeuvres.&#10;&#10;Skill Groups:&#10;-Ground Vehicle&#10;-Skimmer/Hover&#10;-Walker&#10;&#10;-Skill Use: Half Action.&#10;-Category: Operator.">Drive (Ag) &#128712;</label>
-                    <label class="label2">Basic</label>
-                    <label class="label2">Trained</label>
+                    <label class="label1 help" data-i18n-title="DriveSkillDescription" data title="The Drive Skill allows the character to control land-based vehicles.&#10;Normal driving does not require a Skill Test, but one is required&#10;for hazardous conditions, excessive speed, or dangerous manoeuvres.&#10;&#10;Skill Groups:&#10;-Ground Vehicle&#10;-Skimmer/Hover&#10;-Walker&#10;&#10;-Skill Use: Half Action.&#10;-Category: Operator.">Drive (Ag) &#128712;</label>
+                    <label class="label1" data-i18n="RollTest">Roll Test</label>
+                    <label class="label1" data-i18n="Info">Info</label>
+                    <label class="label2" data-i18n="Basic">Basic</label>
+                    <label class="label2" data-i18n="Trained">Trained</label>
                     <label class="label2">+10</label>
                     <label class="label2">+20</label>
-                    <label class="label2">Talent</label>
-                    <label class="label2">Mod</label>
-                    <label class="label2">Roll</label>
+                    <label class="label2" data-i18n="Talent">Talent</label>
+                    <label class="label2" data-i18n="Mod">Mod</label>
+                    <label class="label2" data-i18n="Total">Total</label>
                 </div>
                 <fieldset class="repeating_drive">
                     <div class="grid8">
@@ -1138,14 +1145,14 @@
             </div>
             <div class="quickborder">
                 <div class="grid8">
-                    <label class="label1 help" title="The character uses the Performer Skill to entertain and enthrall groups of spectators.&#10;Performer Tests take an amount of time dependent on the art form involved.&#10;&#10;Skill Groups:&#10;-Dancer&#10;-Musician&#10;-Singer&#10;-Storyteller&#10;&#10;-Skill Use: Variable.&#10;&#10;-Special Use: Charming Performance&#10;The character may make a Difficult (–10) Performer (Storyteller) or (Singer)&#10;Test instead of Charm, to win round the audience, causing their disposition&#10;to improve by one level.&#10;&#10;-Special Use: Enthralling Performance&#10;The character may make a Difficult (–10) Performer (Musician) or (Singer)&#10;Test to utterly enthrall and distract the audience for a moment.&#10;&#10;-Special Use: Rousing Tale&#10;A character may make a Challenging (+0) Performer&#10;(Storyteller) or Performer (Singer) Test instead of a Command&#10;test to raise the moral of troops under his command or get them&#10;to undertake a difficult duty, such as making a last stand.">Performer (Fel) &#128712;</label>
-                    <label class="label2">Basic</label>
-                    <label class="label2">Trained</label>
+                    <label class="label1 help"  title="The character uses the Performer Skill to entertain and enthrall groups of spectators.&#10;Performer Tests take an amount of time dependent on the art form involved.&#10;&#10;Skill Groups:&#10;-Dancer&#10;-Musician&#10;-Singer&#10;-Storyteller&#10;&#10;-Skill Use: Variable.&#10;&#10;-Special Use: Charming Performance&#10;The character may make a Difficult (–10) Performer (Storyteller) or (Singer)&#10;Test instead of Charm, to win round the audience, causing their disposition&#10;to improve by one level.&#10;&#10;-Special Use: Enthralling Performance&#10;The character may make a Difficult (–10) Performer (Musician) or (Singer)&#10;Test to utterly enthrall and distract the audience for a moment.&#10;&#10;-Special Use: Rousing Tale&#10;A character may make a Challenging (+0) Performer&#10;(Storyteller) or Performer (Singer) Test instead of a Command&#10;test to raise the moral of troops under his command or get them&#10;to undertake a difficult duty, such as making a last stand.">Performer (Fel) &#128712;</label>
+                    <label class="label2" data-i18n="Basic">Basic</label>
+                    <label class="label2" data-i18n="Trained">Trained</label>
                     <label class="label2">+10</label>
                     <label class="label2">+20</label>
-                    <label class="label2">Talent</label>
-                    <label class="label2">Mod</label>
-                    <label class="label2">Roll</label>
+                    <label class="label2" data-i18n="Talent">Talent</label>
+                    <label class="label2" data-i18n="Mod">Mod</label>
+                    <label class="label2" data-i18n="Total">Total</label>
                 </div>
                 <fieldset class="repeating_performer">
                     <div class="grid8">
